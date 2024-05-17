@@ -332,6 +332,23 @@ section {
     margin-bottom: 2rem;
 }
 
+.vacation-links {
+    display: flex;
+}
+
+.experience-nav {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    height: auto;
+}
+
+.vacation-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
 .experience-details-container {
     display: flex;
     justify-content: center;
