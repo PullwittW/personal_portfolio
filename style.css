@@ -50,7 +50,7 @@ a {
 a:hover {
     color: gray;
     text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -145,6 +145,7 @@ a:hover {
 /* SECTIONS */
 
 section {
+    position: relative;
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -154,6 +155,10 @@ section {
 
 .section-container {
     display: flex;
+}
+
+.profile-pic {
+    border-radius: 15rem;
 }
 
 /* PROFILE SECTION */
