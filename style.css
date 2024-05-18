@@ -32,7 +32,7 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
 }
 
 .nav-links {
@@ -345,7 +345,7 @@ section {
 }
 
 .vacation-links {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: auto;
     background-color: white;
@@ -360,6 +360,10 @@ section {
     text-align: center;
     padding: 14px;
     text-decoration: none;
+}
+
+.vacation-links a:hover {
+    cursor: pointer;
 }
 
 .experience-details-container {
@@ -392,10 +396,9 @@ article .icon {
 /* photo grid */
 
  .gallery {
-  --s: 250px; /* control the size */
+  --s: 230px; /* control the size */
   --g: 10px;  /* control the gap */
   --f: 1.5;   /* control the scale factor */
-  
   display: grid;
   gap: var(--g);
   width: calc(3*var(--s) + 2*var(--g));
@@ -410,14 +413,24 @@ article .icon {
   min-width: 100%;
   object-fit: cover;
   cursor: pointer;
-  filter: grayscale(80%);
-  transition: .35s linear;
+  filter: grayscale();
+  transition: .35s;
 }
 
+.gallery img:hover {
+    filter: grayscale(0);
+}
+
+/*
 .gallery img:hover{
   filter: grayscale(0);
   width:  calc(var(--s)*var(--f));
   height: calc(var(--s)*var(--f));
+}
+*/
+
+#indonesien, #vietnam, #laos, #malaysia {
+    display: none;
 }
 
 /* PROJECTS */ 
