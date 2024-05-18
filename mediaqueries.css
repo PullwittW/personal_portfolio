@@ -104,4 +104,7 @@
     .text-container {
         text-align: justify;
     }
+    .gallery {
+        display: none;
+    }
 }
