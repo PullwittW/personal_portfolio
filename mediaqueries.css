@@ -107,4 +107,7 @@
     .gallery {
         display: none;
     }
+    .photo-container-mobile {
+        display: block;
+    }
 }
