@@ -159,7 +159,7 @@ a:hover {
 .btn-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .btn {
@@ -169,6 +169,7 @@ a:hover {
     width: 8rem;
     border-radius: 2rem;
     text-decoration: none;
+    margin: 5px;
 }
 
 .btn-color-1,
@@ -199,9 +200,7 @@ a:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-    gap: 1rem;
-}
+
 
 /* SECTIONS */
 
