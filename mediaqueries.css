@@ -10,6 +10,18 @@
     #projects {
         height: fit-content;
     }
+    a {
+        color: black;
+        text-decoration: none;
+        text-decoration-color: white;
+    }
+    
+    a:hover {
+        color: gray;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: rgb(181, 181, 181);
+    }
 }
 
 @media screen and (max-width: 1200px) {
