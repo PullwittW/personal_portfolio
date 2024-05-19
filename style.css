@@ -512,6 +512,14 @@ article .icon {
     clear: both;
   }
 
+  .more-btn {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100px;
+    margin-top: 20px;   
+  }
+
 /* PROJECTS */ 
 
 #projects {
