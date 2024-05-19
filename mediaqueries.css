@@ -55,7 +55,7 @@
         margin-top: 0;
     }
     .gallery {
-        --s: 150px; /* control the size */
+        --s: 180px; /* control the size */
         --g: 10px;  /* control the gap */
         --f: 1.5;   /* control the scale factor */
         
@@ -64,7 +64,11 @@
         width: calc(3*var(--s) + 2*var(--g));
         aspect-ratio: 1;
         grid-template-columns: repeat(3,auto);
-      }
+    }
+    .photos-detail-overlay {
+        font-size: 13px;
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
