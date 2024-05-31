@@ -328,10 +328,9 @@ section {
 
 hr.solid {
     text-decoration: none;
-    margin: 2px;
-    border-top: 1px solid rgb(163, 163,163);
-    border-radius: 0.5px;
-  }
+    margin: 5px;
+    border-radius: 2px;
+}
 
 /* EXPLORATIONS */
 
