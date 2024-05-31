@@ -554,7 +554,8 @@ article .icon {
     justify-content: center;
     /* align-items: center; */
     height: 100px;
-    margin-top: 20px;   
+    margin-top: 20px; 
+    cursor: pointer;  
   }
 
 /* PROJECTS */ 
