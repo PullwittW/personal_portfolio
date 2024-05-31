@@ -311,6 +311,7 @@ section {
 }
 
 .section-container {
+    justify-content: center;
     gap: 4rem;
     height: 80%;
 }
