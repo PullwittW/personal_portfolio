@@ -20,7 +20,9 @@ p {
 
 /* Title */
 
-h1 {
+h1,
+a {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
