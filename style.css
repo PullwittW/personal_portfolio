@@ -265,7 +265,7 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 /* ABOUT SECTION */
@@ -337,18 +337,14 @@ hr.solid {
     position: relative;
 }
 
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
-
 .experience-nav {
     display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    height: auto;
+    margin: 2vh;
+    /*margin-bottom: 3vh;*/
 }
 
 .vacation-links {
@@ -567,6 +563,13 @@ article .icon {
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .project-img {
