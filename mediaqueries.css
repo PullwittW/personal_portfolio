@@ -21,6 +21,9 @@
         text-decoration: underline;
         text-decoration-color: rgb(181, 181, 181);
     }
+    .experience-mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -127,9 +130,14 @@
     }
     .more-btn {
         height: 20px;
-        margin-top: 10px;   
     }
+    .experience {
+        display: none;
+    }
+    /*
+
     #gallery_more {
         display: none;
     }
+    */
 }

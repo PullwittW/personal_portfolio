@@ -23,6 +23,12 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+function plusSlidesUsaCanyons(n) {
+  showSlides(slideIndex += n);
+}
+function plusSlidesUsaLasVegas(n) {
+  showSlides(slideIndex += n);
+}
 
 // Thumbnail image controls
 function currentSlide(n) {
