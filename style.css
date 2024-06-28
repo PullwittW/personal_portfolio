@@ -289,6 +289,10 @@ section {
   display: flex;
 }
 
+#mobile-pic {
+  display: none;
+}
+
 .about-pic {
   border-radius: 2rem;
 }

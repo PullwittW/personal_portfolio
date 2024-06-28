@@ -39,6 +39,13 @@
     #profile, .section-container {
         display: block;
     }
+    #mobile-pic {
+        display: flex;
+        margin-top: 20px;
+    }
+    #desctop-pic {
+        display: none;
+    }
     .arrow {
         display: none;
     }
@@ -80,6 +87,13 @@
     #profile {
         height: 83vh;
         margin-bottom: 0;
+    }
+    #mobile-pic {
+        display: flex;
+        margin-top: 20px;
+    }
+    #desctop-pic {
+        display: none;
     }
     article {
         font-size: 1rem;
