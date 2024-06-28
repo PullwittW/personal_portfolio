@@ -114,6 +114,7 @@
     .experience-sub-title {
         font-size: 1.25rem;
     }
+    
     .logo {
         font-size: 1.5rem;
     }
@@ -136,7 +137,7 @@
     .text-container {
         text-align: justify;
     }
-    .gallery {
+    .gallery, .tablink {
         display: none;
     }
     .photo-container-mobile {

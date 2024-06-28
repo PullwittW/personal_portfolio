@@ -53,7 +53,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-function openTab(evt, tabName) {
+function openTabDesctop(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("gallery");
   for (i = 0; i < tabcontent.length; i++) {
