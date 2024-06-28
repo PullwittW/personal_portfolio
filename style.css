@@ -397,6 +397,11 @@ article .icon {
 
 /* photo grid */
 
+/* Hide all Taps by default except USA */
+#barcelona {
+  display: none;
+}
+
 .gallery {
   --s: 250px; /* control the size */
   --g: 10px; /* control the gap */

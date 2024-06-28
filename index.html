@@ -110,14 +110,6 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="assets/personal-image3.webp"
-            alt="Profile picture"
-            class="about-pic"
-            style="filter:grayscale()"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -167,6 +159,14 @@
           </div>
           -->
         </div>
+        <div class="section__pic-container">
+          <img
+            src="assets/personal-image3.webp"
+            alt="Profile picture"
+            class="about-pic"
+            style="filter:grayscale()"
+          />
+        </div>
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
@@ -180,8 +180,10 @@
       <h1 class="title">Explorations</h1>
       <nav class="experience-nav">
         <div class="vacation-links">
-          <a onclick="">USA 2023</a>
+          <a class="tablink" onclick="openTab(event, 'usa')">USA 2023</a>
+          
           <!--
+          <a class="tablink" onclick="openTab(event, 'barcelona')">Barcelona 2023</a>
           <a href="">Indonesien 2024</a>
           <a href="">Vietnam 2025</a>
           <a href="">Laos 2025</a>
@@ -227,6 +229,44 @@
           </div>
           <div class="photos-details-container">
             <img src="assets/usa/lasvegas/usa13.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Las Vegas Sign</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/golf/usa6.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Lake Powell <br> National Golf Course</div>
+          </div>
+        </div>
+        <div id="barcelona" class="gallery">
+          <div class="photos-details-container">
+            <img src="assets/usa/sanfran/usa1.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Downtown, San Francisco</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/sanfran/usa2.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Financial District,<br> San Francisco</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/canyons/usa3.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Grand Canyon Airport</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/canyons/usa34.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Grand Canyon</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/canyons/usa17.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Antelope Canyon</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/canyons/usa16.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Bryce Canyon</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/lasvegas/usa14.webp" alt="" class="experience-photos"/>
+            <div class="photos-detail-overlay">Las Vegas</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/usa/lasvegas/usa14.webp" alt="" class="experience-photos"/>
             <div class="photos-detail-overlay">Las Vegas Sign</div>
           </div>
           <div class="photos-details-container">
