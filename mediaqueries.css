@@ -24,6 +24,9 @@
     .experience-mobile {
         display: none;
     }
+    .tablinkMobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -91,8 +94,12 @@
     #mobile-pic {
         display: flex;
         margin-top: 20px;
+        height: 310px;
     }
     #desctop-pic {
+        display: none;
+    }
+    #experience {
         display: none;
     }
     article {
@@ -103,7 +110,10 @@
         margin-bottom: 2rem;
     }
     .about-containers, .contact-info-upper-container, .btn-container {
-        flex-wrap: wrap;
+        display: block;
+    }
+    .details-container {
+        margin: 20px
     }
     .contact-info-container {
         margin: 1rem;
@@ -114,7 +124,6 @@
     .experience-sub-title {
         font-size: 1.25rem;
     }
-    
     .logo {
         font-size: 1.5rem;
     }
@@ -137,22 +146,10 @@
     .text-container {
         text-align: justify;
     }
-    .gallery, .tablink {
+    #nav-links__mobile {
+        display: flex;
+    }
+    #nav-links__desctop {
         display: none;
     }
-    .photo-container-mobile {
-        display: block;
-    }
-    .more-btn {
-        height: 20px;
-    }
-    .experience {
-        display: none;
-    }
-    /*
-
-    #gallery_more {
-        display: none;
-    }
-    */
 }

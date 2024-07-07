@@ -248,6 +248,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  padding-top: 2px
 }
 
 .section__text__p2 {
@@ -304,6 +305,7 @@ section {
 }
 
 .details-container {
+  justify-content: center;
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -331,6 +333,8 @@ section {
 
 hr.solid {
   margin: 5px;
+  margin-left: 5rem;
+  margin-right: 5rem;
   border-radius: 2px;
 }
 
@@ -462,99 +466,8 @@ article .icon {
   filter: grayscale(0);
 }
 
-/*
-.gallery img:hover{
-  filter: grayscale(0);
-  width:  calc(var(--s)*var(--f));
-  height: calc(var(--s)*var(--f));
-}
-*/
-
-/* gallery mobile */
-
-#indonesien,
-#vietnam,
-#laos,
-#malaysia,
-.photo-container-mobile {
-  display: none;
-}
-
 * {
   box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.photo-container-mobile {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-.mySlides img {
-  width: 100%;
-  height: auto;
-  filter: grayscale();
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 52%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: white;
-  padding: 2px 16px;
-  color: black;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .more-btn {
@@ -565,6 +478,7 @@ article .icon {
   margin-top: 20px;
   cursor: pointer;
 }
+
 
 /* PROJECTS */
 
@@ -653,4 +567,8 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+#nav-links__mobile {
+  display: none;
 }
