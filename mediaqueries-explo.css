@@ -1,6 +1,14 @@
 @media screen and (max-width: 1400px) {
-    .experience-mobile {
-        display: none;
+    .gallery {
+        --s: 250px; /* control the size */
+        --g: 10px; /* control the gap */
+        --f: 1; /* control the scale factor */
+        display: grid;
+        gap: var(--g);
+        width: calc(3 * var(--s) + 40 * var(--g));
+        aspect-ratio: 1;
+        grid-template-columns: repeat(4, auto);
+        margin-bottom: 50px;
     }
 }
 
@@ -20,15 +28,15 @@
         margin-top: 0;
     }
     .gallery {
-        --s: 180px; /* control the size */
-        --g: 10px;  /* control the gap */
-        --f: 1.5;   /* control the scale factor */
-        
+        --s: 200px; /* control the size */
+        --g: 10px; /* control the gap */
+        --f: 1; /* control the scale factor */
         display: grid;
         gap: var(--g);
-        width: calc(3*var(--s) + 2*var(--g));
+        width: calc(3 * var(--s) + 40 * var(--g));
         aspect-ratio: 1;
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(4, auto);
+        margin-bottom: 50px;
     }
     .photos-detail-overlay {
         font-size: 13px;
@@ -37,10 +45,8 @@
 }
 
 @media screen and (max-width: 600px) {
-    .experience-desc {
+    #experience {
         display: none;
     }
-    .experience-mobile {
-        display: block;
-    }
+
 }
