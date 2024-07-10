@@ -27,6 +27,17 @@ p {
   justify-content: baseline;
 }
 
+.title {
+  font-size: 2rem;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.section__text__p1 {
+  text-align: center;
+  padding-top: 2px
+}
+
 h1 {
   display: flex;
   justify-content: center;
