@@ -15,17 +15,10 @@
         text-decoration: none;
         text-decoration-color: white;
     }
-    
     a:hover {
         color: gray;
         text-decoration: underline;
         text-decoration-color: rgb(181, 181, 181);
-    }
-    .experience-mobile {
-        display: none;
-    }
-    .tablinkMobile {
-        display: none;
     }
 }
 
@@ -67,10 +60,9 @@
         margin-top: 0;
     }
     .gallery {
-        --s: 180px; /* control the size */
+        --s: 250px; /* control the size */
         --g: 10px;  /* control the gap */
         --f: 1.5;   /* control the scale factor */
-        
         display: grid;
         gap: var(--g);
         width: calc(3*var(--s) + 2*var(--g));
