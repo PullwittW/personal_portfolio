@@ -374,6 +374,14 @@ hr.solid {
 
 .vacation-links a:hover {
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgb(181, 181, 181);
+  /*text-underline-offset: 1rem;*/
+}
+
+.tab-link.active {
+  text-decoration: underline;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .experience-details-container {
