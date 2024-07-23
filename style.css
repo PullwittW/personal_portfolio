@@ -478,15 +478,11 @@ article .icon {
   box-sizing: border-box;
 }
 
-.more-btn {
+.exploration_btn_container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  height: 100px;
-  margin-top: 20px;
-  cursor: pointer;
+  margin: 30px;
 }
-
 
 /* PROJECTS */
 
