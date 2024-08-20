@@ -415,7 +415,7 @@ article .icon {
 /* photo grid */
 
 /* Hide all Taps by default except USA */
-#barcelona {
+#barcelona,#austria {
   display: none;
 }
 
