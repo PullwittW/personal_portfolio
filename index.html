@@ -77,7 +77,7 @@
         <div id="socials-container">
           <a href="https://www.instagram.com/wangu.pullwitt/" target="_blank">
             <img
-              src="./assets/instagram_logo.jpg"
+              src="./assets/instagram-icon.png"
               alt="My Instagram profile"
               class="icon"
               style="border-radius: 20px;"
@@ -142,12 +142,12 @@
               />
               <h3>Experience</h3>
               <p>
+                Swift UI
+                <hr class="solid" color="#a3a3a3">
                 2+ years <br />
                 Frontend Development <br />
                 <hr class="solid" color="#a3a3a3">
                 Harvard CS50 Python Course
-                <hr class="solid" color="#a3a3a3">
-                Swift UI
               </p>
             </div>
           </div>
@@ -402,36 +402,59 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:info.pullwitt@gmail.com">E-Mail</a></p>
+      <div class="contact-upper-container">
+        <div class="contact-form-container">
+          <form action="\action_page.php">
+            <div class="form-names">
+              <div class="firstname">
+                <label for="fname">Vorname: </label><br>
+                <input type="text" name="fname" id="fname" maxlength="50">
+              </div>
+              <div class="lastname">
+                <label for="fname">Nachname: </label><br>
+                <input type="text" name="lname" id="lname" maxlength="50">
+              </div>
+            </div>
+            <div class="form-message">
+              <label for="fname">Deine Nachricht: </label><br>
+              <textarea name="messsage" id="message">Tippe munter drauf los...</textarea><br>
+            </div>
+            <div class="form-sumbit">
+              <button type="submit" class="btn btn-color-2" onclick="">
+                Abschicken
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/instagram.webp"
-            alt="Instagram icon"
-            class="icon contact-icon insta-icon"
-          />
-          <p>
-            <a href="https://www.instagram.com/wangu.pullwitt/" target="_blank"
-              >Instagram</a
-            >
-          </p>
+
+        <div class="contact-info-upper-container">
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="mailto:info.pullwitt@gmail.com">Mail</a>
+              </p>
+            </div>
+            <img src="assets/circle.png" alt="Circle" class="circle-image">
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+            <img src="assets/circle.png" alt="Circle" class="circle-image">
+          </div>
+          
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+
+              <p>
+                <a href="https://www.instagram.com/wangu.pullwitt" target="_blank">Instagram</a>
+              </p>
+            </div>
+            <img src="assets/circle.png" alt="Circle" class="circle-image">
+          </div>
         </div>
       </div>
       <img
