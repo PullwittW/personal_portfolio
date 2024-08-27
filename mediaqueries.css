@@ -94,6 +94,9 @@
     #experience {
         display: none;
     }
+    #contact {
+        margin-bottom: 3rem;
+    }
     article {
         font-size: 1rem;
     }
@@ -144,14 +147,31 @@
     #nav-links__desctop {
         display: none;
     }
-    .contact-info-upper-container {
-        display: grid;
+    .contact-upper-container {
+        display: flex;
         justify-content: center;
         align-items: center;
+        /* border-radius: 2rem;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        background: (250, 250, 250); */
+        gap: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .contact-info-upper-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
     }
     .circle-link-container {
         display: flex;
-        justify-items: center;
-        align-items: center;
-    }
+        position: none;
+        justify-content: center;
+        width: 100%;
+        max-width: 200px;
+        margin: 0;
+      }
 }
