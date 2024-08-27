@@ -101,7 +101,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers, .contact-info-upper-container, .btn-container {
+    .about-containers, .btn-container {
         display: block;
     }
     .details-container {
@@ -143,5 +143,15 @@
     }
     #nav-links__desctop {
         display: none;
+    }
+    .contact-info-upper-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle-link-container {
+        display: flex;
+        justify-items: center;
+        align-items: center;
     }
 }
