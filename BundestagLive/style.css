@@ -1,0 +1,146 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(58, 58, 58);
+}
+
+/* Title */
+
+#headline {
+    display: flex;
+    margin: 20px;
+    justify-content: baseline;
+  }
+  
+  .title {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  
+  .section__text__p1 {
+    text-align: center;
+    padding-top: 2px
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+
+  /*Navigation*/
+  
+  .experience-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    height: auto;
+  }
+  
+  .vacation-links {
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  .vacation-links a {
+    display: inline-block;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .vacation-links a:hover {
+    cursor: pointer;
+  }
+
+  /* social media buttons */
+
+.contact-info-upper-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    width: 100%; /* Eventuell löschen */
+  }
+  
+  .circle-link-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+    margin: 0;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .circle-link {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: #000;
+    padding: 20px;
+  }
+  
+  .circle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 110%;
+    height: auto;
+  }
