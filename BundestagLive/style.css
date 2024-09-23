@@ -22,10 +22,10 @@ p {
 /* Title */
 
 #headline {
-    display: flex;
-    margin: 20px;
-    justify-content: baseline;
-  }
+  display: flex;
+  margin: 20px;
+  justify-content: baseline;
+}
   
   .title {
     font-size: 2rem;

@@ -3,27 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hier erhalten Sie Informationen über meine App 'BundestagLive.'">
-    <!--meiner Reisen um die Welt.-->
-    <link rel="stylesheet" href="BundestagLive/style.css" />
-    <link rel="stylesheet" href="BundestagLive/mediaqueries.css" />
+    <meta name="description" content="
+    Herzlich willkommen auf meiner digitalen Visitenkarte! 
+    Hier kannst du mich persönlich, aber auch beruflich, kennenlernen."
+    >
+    <meta
+      name="google-site-verification"
+      content="gUkFM7JB5Lv1nAXx2npQLHh9OAN0n3OCqwAAFxi4Pmg"
+    />
+    <title>Wangu Pullwitt</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon.jpeg" style="border-radius: 20px;"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <script src="script.js"></script>
-    <title>BundestagLive</title>
   </head>
   <body>
-    <section id="headline">
-      <div class="logo">
-        <a href="index.html#experience">Wangu Pullwitt</a>
-      </div>
-      <div>
-    </section>
+    <nav id="desctop-nav">
+      <div class="logo">Wangu Pullwitt</div>
+    </nav>
     <nav class="experience-nav">
         <div class="vacation-links">
           <a class="tablink" href="#gallery">Gallerie</a>
           <a class="tablink" href="#infos">Infos</a>
           <a class="tablink" href="#contact">Kontakt</a>
         </div>
-      </nav>
+    </nav>
     <section id="gallery">
 
     </section>
@@ -31,9 +35,9 @@
 
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-upper-container">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-upper-container">
         <div class="contact-info-upper-container">
             <div class="circle-link-container">
               <div class="contact-info-container circle-link">
@@ -63,6 +67,40 @@
             </div>
           </div>
         </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow up-arrow"
+        onclick="location.href=''"
+      />
     </section>
+    <footer>
+      <nav id="nav-links__desctop">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Gallerie</a></li>
+            <li><a href="#experience">Infos</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="nav-links__mobile">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Gallerie</a></li>
+            <li><a href="#projects">Infos</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169;. All Rights Reserved. <br />
+        info.pullwitt@gmail.com
+      </p>
+    </footer>
+    <div id="fullscreen-overlay" class="fullscreen-overlay">
+      <span class="close-btn">&times;</span>
+      <img id="fullscreen-image" src="" alt="Fullscreen Image">
+    </div>
   </body>
 </html>
