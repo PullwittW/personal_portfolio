@@ -416,7 +416,8 @@ article .icon {
 
 /* Hide all Taps by default except USA */
 #barcelona,
-#austria {
+#austria,
+#usa {
   display: none;
 }
 
