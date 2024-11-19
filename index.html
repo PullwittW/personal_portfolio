@@ -23,10 +23,11 @@
       <div class="logo">Wangu Pullwitt</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Explorations</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Über</a></li>
+          <li><a href="#experience">Erkundungen</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <!-- <a href="">DE </a><a href=""> EN</a> -->
         </ul>
       </div>
     </nav>
@@ -40,9 +41,9 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Über</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
         </div>
       </div>
     </nav>
@@ -71,10 +72,10 @@
             class="btn btn-color-2"
             onclick="window.open('./assets/Lebenslauf.pdf')"
           >
-            Download CV
+            Lebenslauf
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact
+            Kontakt
           </button>
         </div>
         <div id="socials-container">
@@ -114,8 +115,8 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <p class="section__text__p1">Erfahre mehr</p>
+      <h1 class="title">Über Mich</h1>
       <div class="section-container">
         <!-- Damit das Bild auf Mobile oben angezeigt wird -->
         <div id="mobile-pic" class="section__pic-container">
@@ -131,35 +132,35 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/education.png"
-                alt="Experience icon"
-                class="icon"
-                loading="lazy"
-              />
-              <h3>Education</h3>
-              <p class="school">A-Levels - 2024</p>
-              <p class="section__text__p1">at Fortis Akademie Chemnitz</p>
-              <hr class="solid" color="#a3a3a3">
-              <p class="school">Sec. School Degree - 2021</p>
-              <!-- (Computer Science Advanced Course) -->
-              <p class="section__text__p1">at Sportschool Chemnitz</p>
-            </div>
-            <div class="details-container">
-              <img
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
                 loading="lazy"
               />
-              <h3>Experience</h3>
+              <h3>Erfahrung</h3>
               <p>
                 Swift UI
                 <hr class="solid" color="#a3a3a3">
-                2+ years <br />
+                2+ Jahre <br />
                 Frontend Development <br />
                 <hr class="solid" color="#a3a3a3">
                 Harvard CS50 Python Course
               </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+                loading="lazy"
+              />
+              <h3>Bildung</h3>
+              <p class="school">Abitur - 2024</p>
+              <p class="section__text__p1">Fortis Akademie Chemnitz</p>
+              <hr class="solid" color="#a3a3a3">
+              <p class="school">Mittl. Reife - 2021</p>
+              <!-- (Computer Science Advanced Course) -->
+              <p class="section__text__p1">Sportschule Chemnitz</p>
             </div>
           </div>
           <!-- 
@@ -197,8 +198,8 @@
       </div>
     </section>
     <section id="experience">
-      <p class="section__text__p1">My</p>
-      <h1 class="title">Explorations</h1>
+      <p class="section__text__p1">Meine</p>
+      <h1 class="title">Erkundungen</h1>
       <nav class="experience-nav">
         <div class="vacation-links">
           <a class="tablink" onclick="openTabDesctop(event, 'thailand')">Thailand 2024</a>
@@ -380,13 +381,13 @@
         <button
           class="btn btn-color-2"
           onclick="window.location.href='explorations.html'">
-          See more
+          MEHR
         </button>
       </div>
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p class="section__text__p1">Meine neusten</p>
+      <h1 class="title">Projekte</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -410,7 +411,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/PullwittW/JurDat/blob/main/README.md'" target="_blank"
               >
-                More
+                MEHR
               </button>
             </div>
           </div>
@@ -435,7 +436,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='bundestag-live.html'" target="_blank"
               >
-                More
+                MEHR
               </button>
             </div>
           </div>
@@ -450,7 +451,7 @@
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">Schreibe mir</h1>
       <div class="contact-upper-container">
         <!-- <div class="contact-form-container">
           <form action="\action_page.php">
@@ -517,19 +518,19 @@
       <nav id="nav-links__desctop">
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Explorations</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Über</a></li>
+            <li><a href="#experience">Erkundungen</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
       </nav>
       <nav id="nav-links__mobile">
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Über</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
       </nav>
