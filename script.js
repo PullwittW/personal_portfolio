@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Automatisches Resizing der Koordinaten der Image-Map
+document.addEventListener("DOMContentLoaded", function() {
+  imageMapResize();
+});
+
 // Code für Popup auf explorations
 
 // Überprüfen, ob der Benutzer die Seite das erste Mal besucht

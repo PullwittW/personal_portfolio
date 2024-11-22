@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style-explorations.css" />
     <link rel="stylesheet" href="mediaqueries-explo.css" />
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
     <title>Wangu Pullwitt - Explorations</title>
   </head>
   <body>
@@ -26,6 +27,13 @@
       <area target="" alt="Österreich" title="Österreich" href="#austria" coords="740,335,15" shape="circle"></area>
       <area target="" alt="Barcelona" title="Barcelona" href="#barcelona" coords="700,375,20" shape="circle"></area>
     </map>
+
+    <script>
+      // Initialisierung der Bibliothek nach Laden des Dokuments
+      document.addEventListener("DOMContentLoaded", function() {
+      imageMapResize(); // Passt die Koordinaten der Image Map automatisch an
+    });
+    </script>
 
     <section id="experience">
       <nav class="experience-nav">
