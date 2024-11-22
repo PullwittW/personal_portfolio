@@ -13,12 +13,20 @@
     <title>Wangu Pullwitt - Explorations</title>
   </head>
   <body>
-    <section id="headline">
-      <div class="logo">
-        <a href="index.html#experience">Wangu Pullwitt</a>
-      </div>
-      <div>
-    </section>
+    <!-- Weltkarte zum auswählen der Bilder -->
+    <div class="header_box">
+      <img class="world_img" src="assets/map.jpg" usemap="#image-map">
+      <a class="text-overlay" href="index.html#experience">Wangu Pullwitt</a>
+    </div>
+
+    <!-- Anzeigen der Standorte -->
+    <map name="image-map">
+      <area target="" alt="USA" title="USA" href="#usa" coords="220,300,400,400" shape="rect"></area>
+      <area target="" alt="Thailand" title="Thailand" href="#thailand" coords="1080,450,1120,520" shape="rect"></area>
+      <area target="" alt="Österreich" title="Österreich" href="#austria" coords="740,335,15" shape="circle"></area>
+      <area target="" alt="Barcelona" title="Barcelona" href="#barcelona" coords="700,375,20" shape="circle"></area>
+    </map>
+
     <section id="experience">
       <nav class="experience-nav">
         <div class="vacation-links">
@@ -28,7 +36,83 @@
           <a class="tablink" href="explorations.html#usa">USA 2023</a>
         </div>
       </nav>
+
       <div class="experience-details-container">
+        <!-- Bilder aus Thailand -->
+        <p id="thailand" class="section__text__p1">Thailand</p>
+        <h1 class="title">Bangkok</h1>
+        <div class="gallery">
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk18.webp" alt="Kind auf der Straße" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Kind auf der Straße</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk3.webp" alt="Buddha Statue" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Buddha Statue</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk4.webp" alt="Chao Phraya Fluss" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Chao Phraya Fluss</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk5.webp" alt="Wat Arun Tempel" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Wat Arun Tempel</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk13.webp" alt="Bangkok Rooftop" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Bangkok Rooftop</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk7.webp" alt="Dieses Foto spricht für sich" class="experience-photos" loading="lazy"/>
+            <!-- <div class="photos-detail-overlay">Dieses Foto <br> spricht für sich</div> -->
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk8.webp" alt="Chinatown" class="experience-photos" loading="lazy"/>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk9.webp" alt="Chinatown" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Chinatown</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk10.webp" alt="Buddhistischer Bewacher des Wat Arun" class="experience-photos" loading="lazy"/>
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk11.webp" alt="Kind auf der Straße" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Kind auf der Straße</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk12.webp" alt="Buddha Statue" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Buddha Statue</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk6.webp" alt="Chao Phraya Fluss" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Chao Phraya Fluss</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk14.webp" alt="Wat Arun Tempel" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Wat Arun Tempel</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk15.webp" alt="Bangkok Rooftop" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Bangkok Rooftop</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk16.webp" alt="Dieses Foto spricht für sich" class="experience-photos" loading="lazy"/>
+            <!-- <div class="photos-detail-overlay">Dieses Foto <br> spricht für sich</div> -->
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk17.webp" alt="Chinatown" class="experience-photos" loading="lazy"/>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk2.webp" alt="Chinatown" class="experience-photos" loading="lazy"/>
+            <div class="photos-detail-overlay">Chinatown</div>
+          </div>
+          <div class="photos-details-container">
+            <img src="assets/bangkok/bkk19.webp" alt="Buddhistischer Bewacher des Wat Arun" class="experience-photos" loading="lazy"/>
+          </div>
+        </div>
         <!-- Bilder aus Österreich -->
         <p id="austria" class="section__text__p1"><br></p>
         <h1 class="title">Österreich</h1>
@@ -153,8 +237,8 @@
           </div>
         </div>
 
-        <p class="section__text__p1">Canyons</p>
-        <h1 class="title">USA</h1>
+        <p class="section__text__p1">USA</p>
+        <h1 class="title">Canyons</h1>
         <div class="gallery">
           <div class="photos-details-container">
             <img src="assets/usa/canyons/usa3.webp" alt="Grand Canyon Airport" class="experience-photos" loading="lazy"/>
@@ -186,8 +270,8 @@
           </div>
         </div>
 
-        <p class="section__text__p1">San Francisco</p>
-        <h1 class="title">USA</h1>
+        <p class="section__text__p1">USA</p>
+        <h1 class="title">San Francisco</h1>
         <div class="gallery">
           <div class="photos-details-container">
             <img src="assets/usa/sanfran/usa1.webp" alt="Downtown, San Francisco" class="experience-photos" loading="lazy"/>
