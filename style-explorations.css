@@ -146,12 +146,12 @@ article .icon {
 /* photo grid */
 
 .gallery {
-  --s: 250px; /* control the size */
+  --s: 350px; /* control the size */
   --g: 10px; /* control the gap */
-  --f: 1; /* control the scale factor */
   display: grid;
   gap: var(--g);
-  width: calc(3 * var(--s) + 40 * var(--g));
+  width: calc(3 * var(--s));
+  grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
   aspect-ratio: 1;
   grid-template-columns: repeat(3, auto);
   margin-bottom: 50px;

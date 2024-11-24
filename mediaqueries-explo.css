@@ -1,11 +1,12 @@
 @media screen and (max-width: 1400px) {
     .gallery {
-        --s: 200px; /* control the size */
+        --s: 290px; /* control the size */
         --g: 10px; /* control the gap */
         --f: 1; /* control the scale factor */
         display: grid;
         gap: var(--g);
-        width: calc(3 * var(--s) + 40 * var(--g));
+        width: calc(3 * var(--s));
+        grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
         aspect-ratio: 1;
         grid-template-columns: repeat(3, auto);
         margin-bottom: 50px;
@@ -28,12 +29,13 @@
         margin-top: 0;
     }
     .gallery {
-        --s: 120px; /* control the size */
+        --s: 220px; /* control the size */
         --g: 10px; /* control the gap */
         --f: 1; /* control the scale factor */
         display: grid;
         gap: var(--g);
-        width: calc(3 * var(--s) + 40 * var(--g));
+        width: calc(3 * var(--s));
+        grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
         aspect-ratio: 1;
         grid-template-columns: repeat(3, auto);
         margin-bottom: 50px;
@@ -51,7 +53,8 @@
         --f: 1; /* control the scale factor */
         display: grid;
         gap: var(--g);
-        width: calc(3 * var(--s) + 40 * var(--g));
+        width: calc(3 * var(--s));
+        grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
         aspect-ratio: 1;
         grid-template-columns: repeat(3, auto);
         margin-bottom: 50px;
