@@ -340,6 +340,63 @@ hr.solid {
   border-radius: 2px;
 }
 
+.education-container {
+  display: block;
+}
+
+.timeline {
+  list-style: none; /* Bullet Points ausblenden */
+  padding: 0;
+  margin: 10px;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+}
+.timeline li::before {
+  display: block;
+  background: #cacaca;
+  height: 16px;
+  width: 16px;
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  border-radius: 8px;
+  z-index: 10;
+}
+.timeline li {
+  display: block;
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0 0 20px 40px;
+  width: auto;
+}
+.timeline li::after {
+  display: block;
+  background: #ffffff;
+  height: 36px;
+  width: 36px;
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -6px;
+  border-radius: 18px;
+  z-index: 9;
+}
+.timeline li small {
+  color: #b9b9b9;
+}
+.date {
+  font-weight: bold;
+}
+
 /* EXPLORATIONS */
 
 #experience {
@@ -521,6 +578,18 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.skilllevel {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.skilllevel li {
+  margin: 20px 20px;
+}
+.skilllevel li small {
+  color: #b9b9b9;
+}
+
 /* CONTACT */
 
 #contact {
@@ -541,62 +610,6 @@ article .icon {
   margin: 4rem auto;
   padding: 0.5rem;
   width: 100%;
-}
-
-/* form */
-
-.contact-form-container {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  margin: 2rem;
-}
-
-.contact-form-container label,
-input, textarea {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.contact-form-container label {
-  justify-items: left;
-  font-size: larger;
-}
-
-.contact-form-container input,textarea {
-  appearance: none;
-  border: none;
-  outline: none;
-  background: rgb(163, 163, 163);
-  border-radius: 2rem;
-  padding: 1rem;
-  color: #000000;
-}
-
-.contact-form-container button {
-  margin-top: 30px;
-  justify-self: center;
-}
-
-.contact-form-container textarea {
-  height: 100px;
-  width: 100%;
-  resize: none;
-}
-
-.form-names {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.form-message {
-  width: 100%;
-}
-
-.form-sumbit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* social media buttons */
@@ -687,7 +700,10 @@ footer p {
   margin: auto;
   display: block;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .close-btn {

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="
+    <meta
+      name="description"
+      content="
     Herzlich willkommen auf meiner digitalen Visitenkarte! 
     Hier kannst du mich persönlich, aber auch beruflich, kennenlernen."
-    >
+    />
     <meta
       name="google-site-verification"
       content="gUkFM7JB5Lv1nAXx2npQLHh9OAN0n3OCqwAAFxi4Pmg"
     />
     <title>Wangu Pullwitts Website</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icon.jpeg" style="border-radius: 100px;"/>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icon.jpeg"
+      style="border-radius: 100px"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="script.js"></script>
@@ -41,7 +48,7 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a  href="#about" onclick="toggleMenu()">Über</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Über</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
         </div>
@@ -54,7 +61,7 @@
           src="./assets/personal-image4.jpeg"
           alt="Wangu Pullwitt profile picture"
           class="profile-pic"
-          style="filter:grayscale()"
+          style="filter: grayscale()"
           loading="lazy"
         />
       </div>
@@ -64,7 +71,7 @@
         <p class="section__text__p2">
           <!--Law Student <br />
           at Bayreuth University-->
-          Traveller <br>
+          Traveller <br />
           Around the World
         </p>
         <div class="btn_container">
@@ -84,7 +91,7 @@
               src="./assets/instagram-icon.png"
               alt="My Instagram profile"
               class="icon"
-              style="border-radius: 20px;"
+              style="border-radius: 20px"
               loading="lazy"
             />
           </a>
@@ -125,44 +132,32 @@
             src="assets/personal-image3.webp"
             alt="Profile picture"
             class="about-pic"
-            style="filter:grayscale()"
+            style="filter: grayscale()"
             loading="lazy"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-                loading="lazy"
-              />
-              <h3>Erfahrung</h3>
-              <p class="section__text__p1">Swift UI, Webdesign</p> <!-- , Python -->
-              <hr class="solid" color="#a3a3a3">
-              <p class="section__text__p1">2+ Jahre Frontend Dev.</p>
-              <!-- <hr class="solid" color="#a3a3a3">
-              <p class="section__text__p1">Harvard CS50 Python Course</p> -->
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Experience icon"
-                class="icon"
-                loading="lazy"
-              />
+            <div class="education-container">
               <h3>Bildung</h3>
-              <p class="school">Abitur - 2024</p>
-              <p class="section__text__p1">Fortis Akademie Chemnitz</p>
-              <hr class="solid" color="#a3a3a3">
-              <p class="school">Mittl. Reife - 2021</p>
-              <!-- (Computer Science Advanced Course) -->
-              <p class="section__text__p1">Sportschule Chemnitz</p>
+              <ul class="timeline">
+                <!-- <li>
+                  <small class="date">2025 </small><br />
+                  <strong>Jurastudium Leipzig</strong>
+                </li> -->
+                <li>
+                  <small class="date">2021 - 2024 </small><br />
+                  <strong>Abitur Fortis Akademie Chemnitz</strong>
+                </li>
+                <li>
+                  <small class="date">2021 </small><br />
+                  <strong>Mittl. Reife Sportschule Chemnitz</strong>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- 
-          <div class="text-container">
+
+          <!-- <div class="text-container">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
               iste facilis eius maiores quaerat dignissimos tempore incidunt,
@@ -172,9 +167,7 @@
               qui quisquam dolorem harum distinctio neque consequatur tempore
               asperiores!
             </p>
-          </div>
-          -->
-          
+          </div> -->
         </div>
         <!-- Profilbild auf Desctop -->
         <div id="desctop-pic" class="section__pic-container">
@@ -182,7 +175,7 @@
             src="assets/personal-image3.webp"
             alt="Profile picture"
             class="about-pic"
-            style="filter:grayscale()"
+            style="filter: grayscale()"
             loading="lazy"
           />
         </div>
@@ -200,6 +193,22 @@
       <p class="section__text__p1">Meine neusten</p>
       <h1 class="title">Projekte</h1>
       <div class="experience-details-container">
+        <div>
+          <ul class="skilllevel">
+            <li>
+              <strong>Swift UI</strong><br />
+              <progress class="date" max="100" value="70">70</progress>
+            </li>
+            <li>
+              <strong>Python</strong><br />
+              <progress class="date" max="100" value="70">70</progress>
+            </li>
+            <li>
+              <strong>Webdesign</strong><br />
+              <progress class="date" max="100" value="60">60</progress>
+            </li>
+          </ul>
+        </div>
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -214,13 +223,15 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PullwittW/JurDat'" target="_blank"
+                onclick="location.href='https://github.com/PullwittW/JurDat'"
+                target="_blank"
               >
                 GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PullwittW/JurDat/blob/main/README.md'" target="_blank"
+                onclick="location.href='https://github.com/PullwittW/JurDat/blob/main/README.md'"
+                target="_blank"
               >
                 MEHR
               </button>
@@ -239,13 +250,42 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/PullwittW/BundestagLive/blob/main/README.md'" target="_blank"
+                onclick="location.href='https://github.com/PullwittW/BundestagLive/blob/main/README.md'"
+                target="_blank"
               >
                 GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='bundestag-live.html'" target="_blank"
+                onclick="location.href='bundestag-live.html'"
+                target="_blank"
+              >
+                MEHR
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projects/WebsiteMock.png"
+                alt="JurDat Project"
+                class="project-img jurdat-img"
+                loading="lazy"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PullwittW/personal_portfolio'"
+                target="_blank"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PullwittW/personal_portfolio/tree/main/README.md'"
+                target="_blank"
               >
                 MEHR
               </button>
@@ -266,9 +306,15 @@
       <h1 class="title">Erkundungen</h1>
       <nav class="experience-nav">
         <div class="vacation-links">
-          <a class="tablink" onclick="openTabDesctop(event, 'thailand')">Thailand 2024</a>
-          <a class="tablink" onclick="openTabDesctop(event, 'austria')">Österreich 2024</a>
-          <a class="tablink" onclick="openTabDesctop(event, 'barcelona')">Barcelona 2024</a>
+          <a class="tablink" onclick="openTabDesctop(event, 'thailand')"
+            >Thailand 2024</a
+          >
+          <a class="tablink" onclick="openTabDesctop(event, 'austria')"
+            >Österreich 2024</a
+          >
+          <a class="tablink" onclick="openTabDesctop(event, 'barcelona')"
+            >Barcelona 2024</a
+          >
           <a class="tablink" onclick="openTabDesctop(event, 'usa')">USA 2023</a>
           <!--
           <a href="">Malaysia 2024</a>
@@ -285,166 +331,360 @@
       <div class="experience-details-container">
         <div id="usa" class="gallery">
           <div class="photos-details-container">
-            <img src="assets/usa/sanfran/usa1.webp" alt="Downtown, San Francisco" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/sanfran/usa1.webp"
+              alt="Downtown, San Francisco"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Downtown, San Francisco</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/sanfran/usa2.webp" alt="Financial District, San Francisco" class="experience-photos" loading="lazy"/>
-            <div class="photos-detail-overlay">Financial District,<br> San Francisco</div>
+            <img
+              src="assets/usa/sanfran/usa2.webp"
+              alt="Financial District, San Francisco"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">
+              Financial District,<br />
+              San Francisco
+            </div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/canyons/usa3.webp" alt="Grand Canyon Airport" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/canyons/usa3.webp"
+              alt="Grand Canyon Airport"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Grand Canyon Airport</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/canyons/usa34.webp" alt="Glen Canyon" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/canyons/usa34.webp"
+              alt="Glen Canyon"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Glen Canyon</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/canyons/usa17.webp" alt="Antelope Canyon" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/canyons/usa17.webp"
+              alt="Antelope Canyon"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Antelope Canyon</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/canyons/usa16.webp" alt="Bryce Canyon" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/canyons/usa16.webp"
+              alt="Bryce Canyon"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Bryce Canyon</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/lasvegas/usa14.webp" alt="Las Vegas" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/lasvegas/usa14.webp"
+              alt="Las Vegas"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Las Vegas</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/lasvegas/usa13.webp" alt="Las Vegas Sign" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/usa/lasvegas/usa13.webp"
+              alt="Las Vegas Sign"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Las Vegas Sign</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/usa/golf/usa6.webp" alt="Lake Powell, National Golf Course" class="experience-photos" loading="lazy"/>
-            <div class="photos-detail-overlay">Lake Powell <br> National Golf Course</div>
+            <img
+              src="assets/usa/golf/usa6.webp"
+              alt="Lake Powell, National Golf Course"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">
+              Lake Powell <br />
+              National Golf Course
+            </div>
           </div>
         </div>
         <div id="barcelona" class="gallery">
           <div class="photos-details-container">
-            <img src="assets/barcelona/bar14.webp" alt="Parque de la Ciutadella" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/bar14.webp"
+              alt="Parque de la Ciutadella"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Parque de la Ciutadella</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/bar12.webp" alt="Placa Nova" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/bar12.webp"
+              alt="Placa Nova"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Placa Nova</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/bar13.webp" alt="L'Arc de Triomf" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/bar13.webp"
+              alt="L'Arc de Triomf"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">L'Arc de Triomf</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/gaudi/bar6.webp" alt="Casa Batlló" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/gaudi/bar6.webp"
+              alt="Casa Batlló"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Casa Batlló</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/bar15.webp" alt="Marcat de la Boqueria" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/bar15.webp"
+              alt="Marcat de la Boqueria"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Marcat de la Boqueria</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/gaudi/bar5.webp" alt="Casa Batlló" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/gaudi/bar5.webp"
+              alt="Casa Batlló"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Casa Batlló</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/sagrada/bar9.webp" alt="Basílica de la Sagrada Familia" class="experience-photos" loading="lazy"/>
-            <div class="photos-detail-overlay">Basílica de la <br>Sagrada Familia</div>
+            <img
+              src="assets/barcelona/sagrada/bar9.webp"
+              alt="Basílica de la Sagrada Familia"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">
+              Basílica de la <br />Sagrada Familia
+            </div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/bar16.webp" alt="Ciutat Vella" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/bar16.webp"
+              alt="Ciutat Vella"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Ciutat Vella</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/barcelona/bar17.webp" alt="Horta-Guinardó" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/barcelona/bar17.webp"
+              alt="Horta-Guinardó"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Horta-Guinardó</div>
           </div>
         </div>
         <div id="austria" class="gallery">
           <div class="photos-details-container">
-            <img src="assets/austria/austria1.webp" alt="Kopsstausee" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria1.webp"
+              alt="Kopsstausee"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Kopsstausee</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria2.webp" alt="Silvrettastausee" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria2.webp"
+              alt="Silvrettastausee"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Silvrettastausee</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria3.webp" alt="Tunnel zur Bielerhöhe" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria3.webp"
+              alt="Tunnel zur Bielerhöhe"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Tunnel zur Bielerhöhe</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria7.webp" alt="Wilder Bach zum Silvrettastausee" class="experience-photos" loading="lazy"/>
-            <div class="photos-detail-overlay">Wilder Bach <br> zum Silvrettastausee</div>
+            <img
+              src="assets/austria/austria7.webp"
+              alt="Wilder Bach zum Silvrettastausee"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">
+              Wilder Bach <br />
+              zum Silvrettastausee
+            </div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria10.webp" alt="Bielerkopf, Gipfelkreuz" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria10.webp"
+              alt="Bielerkopf, Gipfelkreuz"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Bielerkopf, Gipfelkreuz</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria16.webp" alt="Staumauer Silvrettasee" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria16.webp"
+              alt="Staumauer Silvrettasee"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Staumauer Silvrettasee</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria17.webp" alt="Sonnenuntergang Stausee" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria17.webp"
+              alt="Sonnenuntergang Stausee"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Sonnenuntergang Stausee</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria18.webp" alt="Sonnenuntergang mit Ausblick" class="experience-photos" loading="lazy"/>
-            <div class="photos-detail-overlay">Sonnenuntergang mit Ausblick</div>
+            <img
+              src="assets/austria/austria18.webp"
+              alt="Sonnenuntergang mit Ausblick"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">
+              Sonnenuntergang mit Ausblick
+            </div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/austria/austria19.webp" alt="Madlenerhaus" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/austria/austria19.webp"
+              alt="Madlenerhaus"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Madlenerhaus</div>
           </div>
         </div>
         <div id="thailand" class="gallery">
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk3.webp" alt="Kind auf der Straße" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk3.webp"
+              alt="Kind auf der Straße"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Kind auf der Straße</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk4.webp" alt="Buddha Statue" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk4.webp"
+              alt="Buddha Statue"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Buddha Statue</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk6.webp" alt="Chao Phraya Fluss" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk6.webp"
+              alt="Chao Phraya Fluss"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Chao Phraya Fluss</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk8.webp" alt="Wat Arun Tempel" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk8.webp"
+              alt="Wat Arun Tempel"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Wat Arun Tempel</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk19.webp" alt="Bangkok Rooftop" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk19.webp"
+              alt="Bangkok Rooftop"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Bangkok Rooftop</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk11.webp" alt="Dieses Foto spricht für sich" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk11.webp"
+              alt="Dieses Foto spricht für sich"
+              class="experience-photos"
+              loading="lazy"
+            />
             <!-- <div class="photos-detail-overlay">Dieses Foto <br> spricht für sich</div> -->
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk12.webp" alt="Chinatown" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk12.webp"
+              alt="Chinatown"
+              class="experience-photos"
+              loading="lazy"
+            />
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk17.webp" alt="Chinatown" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk17.webp"
+              alt="Chinatown"
+              class="experience-photos"
+              loading="lazy"
+            />
             <div class="photos-detail-overlay">Chinatown</div>
           </div>
           <div class="photos-details-container">
-            <img src="assets/bangkok/bkk9.webp" alt="Buddhistischer Bewacher des Wat Arun" class="experience-photos" loading="lazy"/>
+            <img
+              src="assets/bangkok/bkk9.webp"
+              alt="Buddhistischer Bewacher des Wat Arun"
+              class="experience-photos"
+              loading="lazy"
+            />
           </div>
         </div>
         <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        loading="lazy"
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+          loading="lazy"
         />
       </div>
       <div class="exploration_btn_container">
         <button
           class="btn btn-color-2"
-          onclick="window.location.href='explorations.html'">
+          onclick="window.location.href='explorations.html'"
+        >
           MEHR
         </button>
       </div>
@@ -485,7 +725,12 @@
                 <a href="mailto:info.pullwitt@gmail.com">Mail</a>
               </p>
             </div>
-            <img src="assets/circle.png" alt="Circle" class="circle-image" loading="lazy">
+            <img
+              src="assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
           </div>
 
           <div class="circle-link-container">
@@ -494,16 +739,30 @@
                 <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
               </p>
             </div>
-            <img src="assets/circle.png" alt="Circle" class="circle-image" loading="lazy">
+            <img
+              src="assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
           </div>
-          
+
           <div class="circle-link-container">
             <div class="contact-info-container circle-link">
               <p>
-                <a href="https://www.instagram.com/wangu.pullwitt" target="_blank">Instagram</a>
+                <a
+                  href="https://www.instagram.com/wangu.pullwitt"
+                  target="_blank"
+                  >Instagram</a
+                >
               </p>
             </div>
-            <img src="assets/circle.png" alt="Circle" class="circle-image" loading="lazy">
+            <img
+              src="assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -544,7 +803,7 @@
     <!-- Overlay Image für die 3x3 Fotogallerie -->
     <div id="fullscreen-overlay" class="fullscreen-overlay">
       <span class="close-btn">&times;</span>
-      <img id="fullscreen-image" src="" alt="Fullscreen Image">
+      <img id="fullscreen-image" src="" alt="Fullscreen Image" />
     </div>
   </body>
 </html>
