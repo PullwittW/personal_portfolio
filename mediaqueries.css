@@ -3,9 +3,13 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers {
-        flex-wrap: wrap;
+    .section-container {
+        display: flex;
     }
+    /* .about-details-container {
+        display: block;
+        align-items: center;
+    } */
     #contact,
     #projects {
         height: fit-content;
@@ -32,15 +36,8 @@
     #experience, .experience-details-container {
         margin-top: 2rem;
     }
-    #profile, .section-container {
+    #profile {
         display: block;
-    }
-    #mobile-pic {
-        display: flex;
-        margin-top: 20px;
-    }
-    #desctop-pic {
-        display: none;
     }
     .arrow {
         display: none;
@@ -127,6 +124,9 @@
         gap: 0.5rem;
         text-align: center;
     }
+    .section-container {
+        display: block;
+    }
     .section__pic-container {
         width: auto;
         height: 46vw;
@@ -135,6 +135,16 @@
     .section__text__p2 {
         font-size: 1.25rem;
     }
+    .skill-container {
+        margin: 0;
+      }
+    .skilllevel li progress {
+        width: 50px;
+    }
+    .skilllevel li small {
+        color: #b9b9b9;
+        padding: 0 3px;
+      }
     .title {
         font-size: 2rem;
     }
