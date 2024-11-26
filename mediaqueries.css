@@ -6,6 +6,9 @@
     .section-container {
         display: flex;
     }
+    .about-containers {
+        flex-wrap: wrap;
+    }
     /* .about-details-container {
         display: block;
         align-items: center;
