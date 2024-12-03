@@ -46,12 +46,10 @@ p {
 
 #headline {
   display: flex;
-  
   justify-content: baseline;
 }
 
 .title {
-  
   text-align: left;
   padding-bottom: 20px;
 }
@@ -64,7 +62,6 @@ p {
 h1 {
   display: flex;
   justify-content: center;
-  
   color: black;
 }
 
