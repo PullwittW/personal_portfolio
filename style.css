@@ -411,7 +411,7 @@ hr.solid {
   list-style: none;
   font-size: 1.5rem;
   height: auto;
-  margin: 2vh;
+  margin-bottom: 2vh;
 }
 
 .vacation-links {
@@ -482,7 +482,7 @@ article .icon {
 
 .gallery {
   --s: 250px; /* control the size */
-  --g: 10px; /* control the gap */
+  --g:5px; /* control the gap */
   --f: 1.5; /* control the scale factor */
   display: grid;
   gap: var(--g);
