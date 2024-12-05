@@ -223,6 +223,70 @@ section {
   border-radius: 15rem;
 }
 
+/* Typing Animation */
+.wrapper {
+  margin-bottom: 2rem;
+}
+.animated-text {
+  margin-top: 1rem;
+  color: rgb(58, 58, 58);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.animated-text span {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.animated-text span::before {
+  content: "";
+  animation: words 20s infinite;
+}
+
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(26) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid white;
+  }
+}
+
+@keyframes words {
+  0%,20% {
+    content: "Hobby Programmer";
+  }
+  21%,40% {
+    content: "Traveller Around the World";
+  }
+  41%,60% {
+    content: "Hobby Programmer";
+  }
+  61%,80% {
+    content: "Traveller Around the World";
+  }
+  81%,100% {
+    content: "Hobby Programmer";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85% {
+    width: calc(100% + 8px);
+  }
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -253,11 +317,6 @@ section {
   padding-top: 2px;
 }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
 .title {
   font-size: 3rem;
   text-align: center;
@@ -266,7 +325,7 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   gap: 1.5rem;
 }
 
