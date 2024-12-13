@@ -149,10 +149,10 @@
   .skill-container {
     margin: 0;
   }
-  .skilllevel li progress {
+  .skill-list li progress {
     width: 50px;
   }
-  .skilllevel li small {
+  .skill-list li small {
     color: #b9b9b9;
     padding: 0 3px;
   }
