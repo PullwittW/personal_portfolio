@@ -124,7 +124,7 @@
     </section>
     <!-- Etwas über mich -->
     <section id="about">
-      <p class="section__text__p1">Erfahre mehr</p>
+      <p class="section__text__p1">Erfahren Sie mehr</p>
       <h1 class="title">Über Mich</h1>
       <div class="section-container">
         <!-- Damit das Bild auf Mobile oben angezeigt wird -->
@@ -322,6 +322,9 @@
       <h1 class="title">Erkundungen</h1>
       <nav class="experience-nav">
         <div class="vacation-links">
+          <a class="tablink" onclick="openTabDesctop(event, 'kuala-lumpur')"
+            >Kuala Lumpur 2024</a
+          >
           <a class="tablink" onclick="openTabDesctop(event, 'thailand')"
             >Thailand 2024</a
           >
@@ -332,16 +335,6 @@
             >Barcelona 2024</a
           >
           <a class="tablink" onclick="openTabDesctop(event, 'usa')">USA 2023</a>
-          <!--
-          <a href="">Malaysia 2024</a>
-          <a href="">Indonesien 2024</a>
-          <a href="">Vietnam 2025</a>
-          <a href="">Laos 2025</a>
-          <a href="">Kambodscha 2025</a>
-          <a href="">Singapur 2025</a>
-          <a href="">Kuala Lumpur 2025</a>
-          <a href="">Philipinen 2025</a>
-          -->
         </div>
       </nav>
       <div class="experience-details-container">
@@ -688,6 +681,64 @@
             />
           </div>
         </div>
+        <div id="kuala-lumpur" class="gallery">
+          <div class="photos-details-container">
+            <img
+              src="assets/kl/kl1.webp"
+              alt="Placa Nova"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">Metro</div>
+          </div>
+          <div class="photos-details-container">
+            <img
+              src="assets/kl/kl2.webp"
+              alt="L'Arc de Triomf"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">Tower PNB 18</div>
+          </div>
+          <div class="photos-details-container">
+            <img
+              src="assets/kl/kl3.webp"
+              alt="Casa Batlló"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">KL Downtown</div>
+          </div>
+          <div class="photos-details-container">
+            <img
+              src="assets/kl/kl4.webp"
+              alt="Marcat de la Boqueria"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">Bangkok Bank Towers</div>
+          </div>
+          <div class="photos-details-container">
+            <img
+              src="assets/kl/kl5.webp"
+              alt="Casa Batlló"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">Petronas Tower 2</div>
+          </div>
+          <div class="photos-details-container">
+            <img
+              src="assets/kl/kl6.webp"
+              alt="Basílica de la Sagrada Familia"
+              class="experience-photos"
+              loading="lazy"
+            />
+            <div class="photos-detail-overlay">
+              Petronas Towers
+            </div>
+          </div>
+        </div>
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
@@ -708,7 +759,7 @@
     <!-- Kontaktangaben -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Schreibe mir</h1>
+      <h1 class="title">Schreiben Sie mir</h1>
       <div class="contact-upper-container">
         <!-- <div class="contact-form-container">
           <form action="\action_page.php">
