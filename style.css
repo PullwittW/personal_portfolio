@@ -791,13 +791,16 @@ article .icon {
 }
 
 .carousel-controls button {
-  background: #b9b9b92d;
+  background-color: transparent;
   border: none;
   color: white; 
   font-size: 2rem;
-  font-weight: bold;
   cursor: pointer;
   padding: 10px;
+}
+
+.carousel-controls button:hover {
+  background: #b9b9b92d;
 }
 
 #prev {
