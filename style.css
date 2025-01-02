@@ -251,7 +251,7 @@ section {
   background-color: white;
   border-left: 2px solid;
   right: -8px;
-  animation: cursor .8s infinite, typing 20s steps(26) infinite;
+  animation: cursor 0.8s infinite, typing 20s steps(26) infinite;
 }
 
 @keyframes cursor {
@@ -261,28 +261,50 @@ section {
 }
 
 @keyframes words {
-  0%,20% {
+  0%,
+  20% {
     content: "Hobby Programmer";
   }
-  21%,40% {
+  21%,
+  40% {
     content: "Traveller Around the World";
   }
-  41%,60% {
+  41%,
+  60% {
     content: "Hobby Programmer";
   }
-  61%,80% {
+  61%,
+  80% {
     content: "Traveller Around the World";
   }
-  81%,100% {
+  81%,
+  100% {
     content: "Hobby Programmer";
   }
 }
 
 @keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
     width: 0;
   }
-  5%,20%,25%,40%,45%,60%,65%,80%,85% {
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
     width: calc(100% + 8px);
   }
 }
@@ -416,7 +438,7 @@ hr.solid {
   position: relative;
 }
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -604,7 +626,7 @@ article .icon {
 
 .gallery {
   --s: 250px; /* control the size */
-  --g:5px; /* control the gap */
+  --g: 5px; /* control the gap */
   --f: 1.5; /* control the scale factor */
   display: grid;
   gap: var(--g);
@@ -658,14 +680,131 @@ article .icon {
   filter: grayscale(0);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .exploration_btn_container {
   display: flex;
   justify-content: center;
   margin: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* New Explorations */
+
+#experience-cards {
+  margin: 0;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  display: flex;
+  overflow: visible;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-item .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.carousel-item .button {
+  background: #b9b9b92d;
+  color: white;
+  border: solid;
+  border-color: #b9b9b9;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.carousel-item .button:hover {
+  background: #b9b9b9;
+  color: black;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  background: #b9b9b92d;
+  border: none;
+  color: white; 
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#prev {
+  border-radius: 0 5px 5px 0;
+}
+#next {
+  border-radius: 5px 0 0 5px;
 }
 
 /* CONTACT */

@@ -7,7 +7,7 @@
       name="description"
       content="
     Herzlich willkommen auf meiner digitalen Visitenkarte! 
-    Hier kannst du mich beruflich, aber auch persönlich kennenlernen."
+    Hier können Sie mich beruflich, aber auch persönlich kennenlernen."
     />
     <meta
       name="google-site-verification"
@@ -22,7 +22,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <!-- Navigation für Desktop -->
@@ -312,16 +311,16 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#experience-cards'"
       />
     </section>
     <!-- Fotos von Reisen -->
-    <section id="experience">
+    <!-- <section id="experience">
       <p class="section__text__p1">Meine</p>
       <h1 class="title">Erkundungen</h1>
       <nav class="experience-nav">
         <div class="vacation-links">
-          <!-- <a class="tablink" onclick="openTabDesctop(event, 'kuala-lumpur')"
+          <a class="tablink" onclick="openTabDesctop(event, 'kuala-lumpur')"
             >Hongkong 2025</a
           >
           <a class="tablink" onclick="openTabDesctop(event, 'kuala-lumpur')"
@@ -329,7 +328,7 @@
           >
           <a class="tablink" onclick="openTabDesctop(event, 'kuala-lumpur')"
             >Borneo 2025</a
-          > -->
+          >
           <a class="tablink" onclick="openTabDesctop(event, 'kuala-lumpur')" style="text-decoration: underline;">
             Kuala Lumpur 2024
           </a>
@@ -661,7 +660,6 @@
               class="experience-photos"
               loading="lazy"
             />
-            <!-- <div class="photos-detail-overlay">Dieses Foto <br> spricht für sich</div> -->
           </div>
           <div class="photos-details-container">
             <img
@@ -763,6 +761,75 @@
           MEHR
         </button>
       </div>
+    </section> -->
+    <section id="experience-cards">
+      <p class="section__text__p1">Meine</p>
+      <h1 class="title">Erkundungen</h1>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-track">
+            <!-- Indonesien -->
+            <!-- <div class="carousel-item">
+              <img src="assets/kl/kl1.webp" alt="Vacation 1">
+              <div class="content">
+                <div class="title">Indonesien '24 - '25</div>
+                <a href="explorations.html#kl" class="button">MEHR</a>
+              </div>
+            </div> -->
+            <!-- Kuala Lumpur -->
+            <div class="carousel-item active">
+              <img src="assets/kl/kl1.webp" alt="Vacation 1">
+              <div class="content">
+                <div class="title">Kuala Lumpur '24</div>
+                <a href="explorations.html#kl" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Thailand -->
+            <div class="carousel-item">
+              <img src="assets/bangkok/bkk13.webp" alt="Vacation 2">
+              <div class="content">
+                <div class="title">Thailand '24</div>
+                <a href="explorations.html#thailand" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Österreich -->
+            <div class="carousel-item">
+              <img src="assets/austria/austria1.webp" alt="Vacation 3">
+              <div class="content">
+                <div class="title">Österreich '24</div>
+                <a href="explorations.html#austria" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Barcelona -->
+            <div class="carousel-item">
+              <img src="assets/barcelona/bar14.webp" alt="Vacation 3">
+              <div class="content">
+                <div class="title">Barcelona '24</div>
+                <a href="explorations.html#barcelona" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- USA -->
+            <div class="carousel-item">
+              <img src="assets/usa/sanfran/usa2.webp" alt="Vacation 3">
+              <div class="content">
+                <div class="title">USA '23</div>
+                <a href="explorations.html#usa" class="button">MEHR</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+      loading="lazy"
+    />
     </section>
     <!-- Kontaktangaben -->
     <section id="contact">
@@ -881,5 +948,6 @@
       <span class="close-btn">&times;</span>
       <img id="fullscreen-image" src="" alt="Fullscreen Image" />
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
