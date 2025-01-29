@@ -52,6 +52,26 @@ header img {
   background-color: white;
 }
 
+.navbar h3 {
+  margin: 10px;
+}
+
+.navbar h3:hover {
+  cursor: pointer;
+}
+
+/* experience */
+#experience {
+  position: relative;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* PHOTO GRID */
 
 .gallery {
@@ -123,4 +143,44 @@ footer p {
 
 #nav-links__mobile {
   display: none;
+}
+
+/* Full screen image */
+
+.fullscreen-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
