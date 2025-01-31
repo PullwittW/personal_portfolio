@@ -144,12 +144,16 @@ header img {
 /* FOOTER SECTION */
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 26vh;
-  margin: 0 1rem;
+  margin: 0 0 1rem;
 }
 
 footer p {
   text-align: center;
+  bottom: 0;
 }
 
 #nav-links__mobile {
