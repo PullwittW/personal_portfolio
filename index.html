@@ -29,10 +29,6 @@
       <div class="logo">Wangu Pullwitt</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">Über</a></li>
-          <li><a href="#projects">Projekte</a></li>
-          <li><a href="#experience-cards">Perspektiven</a></li>
-          <li><a href="#contact">Kontakt</a></li>
           <!-- <a href="">DE </a><a href=""> EN</a> -->
         </ul>
       </div>
@@ -41,19 +37,29 @@
     <nav id="hamburger-nav">
       <div class="logo">Wangu Pullwitt</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="hamburger-icon" onclick="openNav()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Über</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
-          <li><a href="#experience-cards" onclick="toggleMenu()">Perspektiven</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+
+        <!-- The overlay -->
+        <div id="nav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="#about">Über</a>
+            <a href="#projects">Projekte</a>
+            <a href="#experience-cards">Perspektiven</a>
+            <a href="#contact">Kontakt</a>
+          </div>
         </div>
       </div>
     </nav>
+
     <!-- Mein Profil -->
     <section id="profile">
       <div class="section__pic-container">
@@ -152,7 +158,12 @@
                 <li>
                   <small class="date">2021 - 2024 </small><br />
                   <strong>Abitur Fortis Akademie, Chemnitz</strong><br />
-                  <strong><small>Leistungskurse: Informations- und Kommunikationstechnologie, Englisch</small></strong>
+                  <strong
+                    ><small
+                      >Leistungskurse: Informations- und
+                      Kommunikationstechnologie, Englisch</small
+                    ></strong
+                  >
                 </li>
                 <li>
                   <small class="date">2021 </small><br />
@@ -325,7 +336,10 @@
           <div class="carousel-track">
             <!-- Borneo -->
             <div class="carousel-item active">
-              <img src="entdeckungen/borneo/borneo2.JPG" alt="Borneo Titelbild">
+              <img
+                src="entdeckungen/borneo/borneo2.JPG"
+                alt="Borneo Titelbild"
+              />
               <div class="content">
                 <div class="title">Borneo '25</div>
                 <!-- <a href="explorations.html#kl" class="button">MEHR</a> -->
@@ -333,7 +347,10 @@
             </div>
             <!-- Indonesien -->
             <div class="carousel-item active">
-              <img src="entdeckungen/indonesia/id3.JPG" alt="Indonesien Titelbild">
+              <img
+                src="entdeckungen/indonesia/id3.JPG"
+                alt="Indonesien Titelbild"
+              />
               <div class="content">
                 <div class="title">Indonesien '24 - '25</div>
                 <!-- <a href="explorations.html#kl" class="button">MEHR</a> -->
@@ -341,7 +358,10 @@
             </div>
             <!-- Kuala Lumpur -->
             <div class="carousel-item">
-              <img src="entdeckungen/kl/kl6.webp" alt="Kuala Lumpur Titelbild">
+              <img
+                src="entdeckungen/kl/kl6.webp"
+                alt="Kuala Lumpur Titelbild"
+              />
               <div class="content">
                 <div class="title">Kuala Lumpur '24</div>
                 <a href="entdeckungen/kuala-lumpur.html" class="button">MEHR</a>
@@ -349,7 +369,10 @@
             </div>
             <!-- Thailand -->
             <div class="carousel-item">
-              <img src="entdeckungen/bangkok/bkk13.webp" alt="Thailand Titelbild">
+              <img
+                src="entdeckungen/bangkok/bkk13.webp"
+                alt="Thailand Titelbild"
+              />
               <div class="content">
                 <div class="title">Thailand '24</div>
                 <a href="entdeckungen/thailand.html" class="button">MEHR</a>
@@ -357,7 +380,10 @@
             </div>
             <!-- Österreich -->
             <div class="carousel-item">
-              <img src="entdeckungen/austria/austria1.webp" alt="Österreich Titelbild">
+              <img
+                src="entdeckungen/austria/austria1.webp"
+                alt="Österreich Titelbild"
+              />
               <div class="content">
                 <div class="title">Österreich '24</div>
                 <a href="entdeckungen/austria.html" class="button">MEHR</a>
@@ -365,7 +391,10 @@
             </div>
             <!-- Barcelona -->
             <div class="carousel-item">
-              <img src="entdeckungen/barcelona/bar14.webp" alt="Barcelona Titelbild">
+              <img
+                src="entdeckungen/barcelona/bar14.webp"
+                alt="Barcelona Titelbild"
+              />
               <div class="content">
                 <div class="title">Barcelona '24</div>
                 <a href="entdeckungen/barcelona.html" class="button">MEHR</a>
@@ -373,7 +402,10 @@
             </div>
             <!-- USA -->
             <div class="carousel-item">
-              <img src="entdeckungen/usa/canyons/usa17.webp" alt="USA Titelbild">
+              <img
+                src="entdeckungen/usa/canyons/usa17.webp"
+                alt="USA Titelbild"
+              />
               <div class="content">
                 <div class="title">USA '23</div>
                 <a href="entdeckungen/usa.html" class="button">MEHR</a>
@@ -387,12 +419,12 @@
         </div>
       </div>
       <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-      loading="lazy"
-    />
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        loading="lazy"
+      />
     </section>
     <!-- Kontaktangaben -->
     <section id="contact">
