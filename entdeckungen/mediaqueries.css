@@ -44,6 +44,11 @@
 }
 
 @media screen and (max-width: 900px) {
+  /* HEADER */
+  header {
+    height: 85vh;
+  }
+
   /* Gallery */
   .photos-detail-overlay {
     display: none;
