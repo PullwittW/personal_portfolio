@@ -20,23 +20,24 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <header>
-      <img src="usa-map.png" alt="usa-map" />
-      <h1 class="title">USA</h1>
-    </header>
-
-    <div class="navbar">
-      <h3 onclick="location.href='#las-vegas'">las vegas</h3>
-      <h3 onclick="location.href='#canyons'">canyons</h3>
-      <h3 onclick="location.href='#'">los angeles</h3>
-      <h3 onclick="location.href='#san-francisco'">san francisco</h3>
-      <!-- <h3>san diego</h3> -->
-    </div>
+      <header>
+        <!-- <img src="usa/usa-map.png" alt="usa-map" /> -->
+        <h1 class="title">USA</h1>
+      </header>
+  
+      <div class="navbar">
+        <h3 onclick="location.href='#las-vegas'">las vegas</h3>
+        <h3 onclick="location.href='#canyons'">canyons</h3>
+        <h3 onclick="location.href='#'">los angeles</h3>
+        <h3 onclick="location.href='#san-francisco'">san francisco</h3>
+        <!-- <h3>san diego</h3> -->
+      </div>
 
     <section id="experience">
       <div class="experience-details-container">
+        <div class="gallery-padding" id="las-vegas"></div>
         <!-- Bilder aus den USA -->
-        <div class="gallery" id="las-vegas">
+        <div class="gallery">
           <div class="photos-details-container">
             <img
               src="usa/lasvegas/usa14.webp"
@@ -120,7 +121,9 @@
           </div>
         </div>
 
-        <div class="gallery" id="canyons">
+        <!-- Canyons Bilder -->
+        <div class="gallery-padding" id="canyons"></div>
+        <div class="gallery">
           <div class="photos-details-container">
             <img
               src="usa/canyons/usa3.webp"
@@ -179,7 +182,8 @@
   
         <!-- <p class="section__text__p1">USA</p>
         <h1 class="title">San Francisco</h1> -->
-        <div class="gallery" id="san-francisco">
+        <div class="gallery-padding" id="san-francisco"></div>
+        <div class="gallery">
           <div class="photos-details-container">
             <img
               src="usa/sanfran/usa1.webp"

@@ -405,9 +405,9 @@ section {
 
 .section-container {
   justify-content: center;
+  align-items: center;
   gap: 4rem;
   height: 80%;
-  margin: 30px auto;
 }
 
 .section__pic-container {
