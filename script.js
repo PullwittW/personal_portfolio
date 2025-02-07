@@ -45,31 +45,3 @@ nextButton.addEventListener("click", () => {
 });
 
 updateCarousel();
-
-// Code für Popup auf explorations
-
-// Überprüfen, ob der Benutzer die Seite das erste Mal besucht
-document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.getElementById("imageModal");
-  const closeModal = document.getElementById("closeModal");
-
-  //   // Überprüfen, ob ein Eintrag in localStorage existiert
-  if (!sessionStorage.getItem("imageShown")) {
-    // Modal anzeigen
-    modal.style.display = "flex";
-    // Setzen, dass das Bild angezeigt wurde
-    sessionStorage.setItem("imageShown", "true");
-  }
-
-  //   // Modal schließen, wenn das Schließen-Symbol geklickt wird
-  closeModal.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-
-  //   // Schließen, wenn man irgendwo außerhalb des Bildes klickt
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-});

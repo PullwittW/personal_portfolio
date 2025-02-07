@@ -65,6 +65,10 @@ a:hover {
   cursor: default;
 }
 
+.nav_logo {
+  height: 50px;
+}
+
 /* HAMBURGER MENU für Mobile */
 
 #hamburger-nav {
