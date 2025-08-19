@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dies ist die Informationsseite für meine selbstgeschriebene App namens JurDat."
+    />
+    <meta
+      name="google-site-verification"
+      content="gUkFM7JB5Lv1nAXx2npQLHh9OAN0n3OCqwAAFxi4Pmg"
+    />
+    <title>Projekt - JurDat.</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icon.jpeg"
+      style="border-radius: 100px"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation für Desktop -->
+    <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='../index.html#projects'">Wangu Pullwitt</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#gallerie">Gallerie</a></li>
+          <li><a href="#infos">Infos</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <!-- <a href="">DE </a><a href=""> EN</a> -->
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation für Mobile -->
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="location.href='../index.html#projects'">Wangu Pullwitt</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a onclick="toggleMenu()" href="#gallerie">Gallerie</a></li>
+          <li><a onclick="toggleMenu()" href="#infos">Infos</a></li>
+          <li><a onclick="toggleMenu()" href="#contact">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Mein Profil -->
+    <section id="gallerie">
+      <img
+        class="header_img"
+        src="https://i.ibb.co/KC5P8hH/jd1.webp"
+        alt="Header Img 1"
+        loading="lazy"
+      />
+    </section>
+    <!-- Infos über App -->
+    <section id="infos">
+      <div class="infos-wrapper">
+        <div class="single-info right">
+          <img src="https://i.ibb.co/KjNFssyG/jd2.webp" alt="Single Info img 1" loading="lazy"/>
+          <p class="section__text__p1">
+            Die Grundidee von <i>JurDat.</i> ist es, Urteile von allen Gerichten
+            in Deutschland einsehen zu können und diese in Kollektionen
+            zu beispielsweise einem individuellen Thema, einer Klausur 
+            oder als Favoriten abzuspeichern. Diese Kollektionen werden 
+            auf der Hauptseite der App dargestellt, von wo sie auch 
+            einsehbar sind.
+          </p>
+        </div>
+
+        <div class="single-info left">
+          <p class="section__text__p1 desc">
+            Funktionen im Überblick: <br>
+            Weitere Funktionen, neben der oben genannten, bestehen darin, 
+            dass die aktuellen Gesetzestexte mittels API geladen werden 
+            und dann übersichtlich in <i>JurDat.</i> einsehbar sind. <br>
+            Zur Speicherung der Anmeldedaten, sowie Profilbild und 
+            favorisierte Urteile, Gesetze oder News wurde Googles Firebase 
+            Programmierschnittstelle eingesetzt.
+          </p>
+          <img src="https://i.ibb.co/wryP4BLf/jd3.webp" alt="Single Info Img 2" loading="lazy"/>
+          <p class="section__text__p1 mobile">
+            Funktionen im Überblick: <br>
+            Weitere Funktionen, neben der oben genannten, bestehen darin, 
+            dass die aktuellen Gesetzestexte mittels API geladen werden 
+            und dann übersichtlich in <i>JurDat.</i> einsehbar sind. <br>
+            Zur Speicherung der Anmeldedaten, sowie Profilbild und 
+            favorisierte Urteile, Gesetze oder News wurde Googles Firebase 
+            Programmierschnittstelle eingesetzt.
+          </p>
+        </div>
+
+        <div class="single-info right">
+          <img src="https://i.ibb.co/ZpfZ5XRk/jd4.webp" alt="Single Info Img 3" loading="lazy"/>
+          <p class="section__text__p1">
+            Die Übersicht „News“ stellt Gesetzesentwürfe dar, welche in 
+            verschiedenen Stadien im Bundestag behandelt werden. 
+            Es wird dargestellt, um welches Gesetz es sich handelt, 
+            wer es in den Bundestag eingebracht hat und wie sein Beratungszustand ist. <br>
+            Diese Daten wurden ebenfalls mittels API vom Bund abgerufen und in <i>JurDat.</i> aufbereitet.
+
+          </p>
+        </div>
+
+        <div class="single-info left">
+          <p class="section__text__p1 desc">
+            Wie oben erwähnt, ist die Übersicht „Urteile“ ein zentraler Punkt der App. 
+            Hier können die Urteile eingesehen werden, welche in den Kollektionen 
+            für später abgespeichert werden können. <br><br>
+            Leider ist hier der Support des Bundes, geschweige denn der einzelnen 
+            Bundesländer, sehr hinterher. Sodass es schwierig ist, nicht-redundante 
+            Datensätze mit gleichen Attributen und Datentypen zu implementieren. 
+            Aber auf Anfrage soll wohl ein besserer Datensatz mit API-Schnittstelle 
+            auf dem Weg sein und von einem IT-Team erstellt werden.
+          </p>
+          <img src="https://i.ibb.co/6JTXzYtw/jd5.webp" alt="Single Info Img 4" loading="lazy"/>
+          <p class="section__text__p1 mobile">
+            Wie oben erwähnt, ist die Übersicht „Urteile“ ein zentraler Punkt der App. 
+            Hier können die Urteile eingesehen werden, welche in den Kollektionen 
+            für später abgespeichert werden können. <br><br>
+            Leider ist hier der Support des Bundes, geschweige denn der einzelnen 
+            Bundesländer, sehr hinterher. Sodass es schwierig ist, nicht-redundante 
+            Datensätze mit gleichen Attributen und Datentypen zu implementieren. 
+            Aber auf Anfrage soll wohl ein besserer Datensatz mit API-Schnittstelle 
+            auf dem Weg sein und von einem IT-Team erstellt werden.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Kontaktangaben -->
+    <section id="contact">
+      <h1 class="title">Schreiben Sie mir</h1>
+      <div class="contact-upper-container">
+        <div class="contact-info-upper-container">
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="mailto:info@wangupullwitt.de">Mail</a>
+              </p>
+            </div>
+            <img
+              src="../assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+            <img
+              src="../assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a
+                  href="https://www.instagram.com/wangu.pullwitt"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </p>
+            </div>
+            <img
+              src="../assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fußzeile -->
+    <footer>
+      <nav id="nav-links__desctop">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#infos">Infos</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="nav-links__mobile">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#infos">Infos</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright 2024 - 2025 &#169;. All Rights Reserved. <br />
+      </p>
+    </footer>
+  </body>
+</html>

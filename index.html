@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+    Herzlich willkommen auf meiner digitalen Visitenkarte! 
+    Hier können Sie mich beruflich, aber auch persönlich kennenlernen."
+    />
+    <meta
+      name="google-site-verification"
+      content="gUkFM7JB5Lv1nAXx2npQLHh9OAN0n3OCqwAAFxi4Pmg"
+    />
+    <title>Wangu Pullwitts Website</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icon.jpeg"
+      style="border-radius: 100px"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Navigation für Desktop -->
+    <nav id="desktop-nav">
+      <div class="logo">Wangu Pullwitt</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Über</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#experience-cards">Reisen</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <!-- <a href="">DE </a><a href=""> EN</a> -->
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation für Mobile -->
+    <nav id="hamburger-nav">
+      <div class="logo">Wangu Pullwitt</div>
+      <div class="hamburger-menu">
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="hamburger-icon" onclick="openNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- The overlay -->
+        <div id="nav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="#about" onclick="closeNav()">Über</a>
+            <a href="#projects" onclick="closeNav()">Projekte</a>
+            <a href="#experience-cards" onclick="closeNav()">Reisen</a>
+            <a href="#contact" onclick="closeNav()">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mein Profil -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img 
+          src="assets/personal-image5.JPG" 
+          alt="Wangu Pullwitt profile picture"
+          class="profile-pic"
+          id="profile-img"
+        >
+        <!-- style="filter: grayscale()" -->
+      </div>
+      <div class="section__text">
+        <!-- <p class="section__text__p1">Hello, I'm</p> -->
+        <div class="wrapper">
+          <p class="section__text__p1">Hallo, ich bin</p>
+          <h1 class="title">Wangu Pullwitt</h1>
+          <div class="animated-text">
+            <span></span>
+          </div>
+        </div>
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Lebenslauf.pdf')"
+          >
+            Lebenslauf
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Kontakt
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.instagram.com/wangu.pullwitt/" target="_blank">
+            <img
+              src="./assets/instagram-icon.png"
+              alt="My Instagram profile"
+              class="icon"
+              style="border-radius: 20px"
+              loading="lazy"
+            />
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              loading="lazy"
+            />
+          </a>
+          <a href="https://github.com/PullwittW" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My GitHub profile"
+              class="icon"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <!-- Etwas über mich -->
+    <section id="about">
+      <p class="section__text__p1">Erfahren Sie mehr</p>
+      <h1 class="title">Über Mich</h1>
+      <div class="section-container">
+        <!-- Damit das Bild auf Mobile oben angezeigt wird -->
+        <div id="mobile-pic" class="section__pic-container">
+          <img 
+            src="https://i.ibb.co/6cjz4t9C/personal-image3.webp" 
+            class="about-pic"
+            alt="Wangu Pullwitt about picture"
+            style="filter: grayscale()"
+            loading="lazy"
+          >
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="education-container">
+              <h2 class="experience-sub-title about-title">Bildung</h2>
+              <ul class="timeline">
+                <!-- <li>
+                  <small class="date">2025 - heute </small><br />
+                  <strong>Jurastudium, Bayreuth</strong><br />
+                  <strong>
+                    <small>Recht und Wirschaft, Bachelor of Laws (LL.B.)</small><br />
+                    <small>Zusatzstudium Informatik und Digitalisierung (DigiZ)</small>
+                  </strong>
+                </li> -->
+                <li>
+                  <small class="date">2021 - 2024 </small><br />
+                  <strong>Abitur Fortis Akademie, Chemnitz</strong><br />
+                  <strong
+                    ><small
+                      >Leistungskurse: Informations- und
+                      Kommunikationstechnologie, Englisch</small
+                    ></strong
+                  >
+                </li>
+                <li>
+                  <small class="date">2021 </small><br />
+                  <strong>Mittl. Reife Sportschule, Chemnitz</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Profilbild auf Desctop -->
+        <div id="desctop-pic" class="section__pic-container">
+          <img
+            src="assets/personal-image3.webp"
+            alt="Profile picture"
+            class="about-pic"
+            style="filter: grayscale()"
+            loading="lazy"
+          />
+        </div>
+        <!-- <div class="text-container">
+          <p>
+            Guten Tag, mein Name ist Wangu Pullwitt und zurzeit bin ich Student der Rechtswissenschaften an der Universität Bayreuth. </br>
+            Zudem nehme ich an dem parallelen Bachelor of Laws (LL.B.) in Recht und Wirtschaft teil und belege das Zusatzstudium Informatik und Digitalisierung. </br>
+            Da mein Leben zum Glück nicht nur aus der Bibliothek und meiner Studentenwohnung besteht, verbringe ich gerne Zeit, eigene Programmierprojekte in verschiedenen Programmiersprachen zu realisieren. </br>
+            Manchmal ist sogar noch Zeit für ein wenig sportliche Betätigung  ;) - <em>So, that's me</em> schauen Sie sich gerne um!
+          </p>
+        </div> -->
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <!-- Programmierungs Projekte -->
+    <section id="projects">
+      <p class="section__text__p1">Meine programmierten</p>
+      <h1 class="title">Projekte</h1>
+      <div class="experience-details-container">
+        <div class="skill-container">
+          <ul class="skill-list">
+            <li>
+              <strong>Swift UI</strong><br />
+              <div class="skill-bar">
+                <progress id="swiftui" class="date" max="100" value="60">
+                  70
+                </progress>
+                <small>60</small>
+              </div>
+            </li>
+            <li>
+              <strong>Python</strong><br />
+              <div class="skill-bar">
+                <progress id="python" class="date" max="100" value="60">
+                  70
+                </progress>
+                <small>60</small>
+              </div>
+            </li>
+            <li>
+              <strong>Web</strong><br />
+              <div class="skill-bar">
+                <progress id="webdesign" class="date" max="100" value="70">
+                  60
+                </progress>
+                <small>70</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.ibb.co/Kj54K0Lz/Jur-Dat-Mock.webp"
+                alt="JurDat Project"
+                class="project-img jurdat-img"
+                loading="lazy"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">JurDat.</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='projekte/jurdat.html'"
+                target="_blank"
+              >
+                MEHR
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/PullwittW/JurDat','_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.ibb.co/dJGkHgG4/Bundestag-Mock.webp"
+                alt="BundestagLive Mock"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BundestagLive</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='projekte/bundestag-live.html'"
+              >
+                MEHR
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/PullwittW/BundestagLive/blob/main/README.md','_blank')"
+                target="_blank"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://i.ibb.co/rKh8FKNZ/Website-Mock.webp"
+                alt="Personal Website Project"
+                class="project-img jurdat-img"
+                loading="lazy"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/PullwittW/personal_portfolio','_blank')"
+                target="_blank"
+              >
+                MEHR
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/PullwittW/personal_portfolio','_blank')"
+                target="_blank"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience-cards'"
+      />
+    </section>
+    <!-- Fotos von Reisen -->
+    <section id="experience-cards">
+      <!-- Ideen für Headline -->
+      <!-- Schnappschüsse festgehalten, Momentaufnahmen, Untewegs gesehen, Schnappschüsse von unterwegs -->
+      <p class="section__text__p1">Schnappschüsse von</p>
+      <h1 class="title">Unterwegs</h1>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-track">
+            <!-- Hong Kong -->
+            <div class="carousel-item active">
+              <img
+                src="https://i.ibb.co/fYPM9ZY1/hong-kong-009.webp"
+                alt="Hong Kong Titelbild"
+              />
+              <div class="content">
+                <div class="title">Hong Kong '25</div>
+                <a href="travel/hong-kong.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Vietnam -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/5hg7rTGs/vietnam-loop-006.webp"
+                alt="Vietnam Titelbild"
+              />
+              <div class="content">
+                <div class="title">Vietnam '25</div>
+                <a href="travel/vietnam.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Borneo -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/WNZvgWc5/borneo2.webp"
+                alt="Borneo Titelbild"
+                loading="lazy"
+              />
+              <div class="content">
+                <div class="title">Borneo '25</div>
+                <a href="travel/borneo.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Indonesien -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/Gvw1QqV8/id3.webp"
+                alt="Indonesien Titelbild"
+                loading="lazy"
+              />
+              <div class="content">
+                <div class="title">Indonesien '24 - '25</div>
+                <a href="travel/indonesien.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Kuala Lumpur -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/27DLHqLW/kl6.webp"
+                alt="Kuala Lumpur Titelbild"
+                loading="lazy"
+              />
+              <div class="content">
+                <div class="title">Kuala Lumpur '24</div>
+                <a href="travel/kuala-lumpur.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Thailand -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/zHjcRyfD/bkk13.webp"
+                alt="Thailand Titelbild"
+                loading="lazy"
+              />
+              <div class="content">
+                <div class="title">Thailand '24</div>
+                <a href="travel/thailand.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Österreich -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/1Gw89L1Q/austria1.webp"
+                alt="Österreich Titelbild"
+              />
+              <div class="content">
+                <div class="title">Österreich '24</div>
+                <a href="travel/austria.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- Barcelona -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/wNmSsQQ8/bar14.webp"
+                alt="Barcelona Titelbild"
+                loading="lazy"
+              />
+              <div class="content">
+                <div class="title">Barcelona '24</div>
+                <a href="travel/barcelona.html" class="button">MEHR</a>
+              </div>
+            </div>
+            <!-- USA -->
+            <div class="carousel-item">
+              <img
+                src="https://i.ibb.co/d4X7y8Hn/usa17.webp"
+                alt="USA Titelbild"
+                loading="lazy"
+              />
+              <div class="content">
+                <div class="title">USA '23</div>
+                <a href="travel/usa.html" class="button">MEHR</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        loading="lazy"
+      />
+    </section>
+    <!-- Kontaktangaben -->
+    <section id="contact">
+      <h1 class="title">Schreiben Sie mir</h1>
+      <div class="contact-upper-container">
+
+        <div class="contact-info-upper-container">
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="mailto:info@wangupullwitt.de">Mail</a>
+              </p>
+            </div>
+            <img
+              src="assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+            <img
+              src="assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a
+                  href="https://www.instagram.com/wangu.pullwitt"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </p>
+            </div>
+            <img
+              src="assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow up-arrow"
+        onclick="location.href=''"
+        loading="lazy"
+      />
+    </section>
+    <!-- Fußzeile -->
+    <footer>
+      <nav id="nav-links__desctop">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Über</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#experience-cards">Reisen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="nav-links__mobile">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Über</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#experience-cards">Reisen</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright 2024 - 2025 &#169;. All Rights Reserved. <br />
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

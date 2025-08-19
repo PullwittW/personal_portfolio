@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dies ist die Informationsseite für meine selbstgeschriebene App namens BundestagLive"
+    />
+    <meta
+      name="google-site-verification"
+      content="gUkFM7JB5Lv1nAXx2npQLHh9OAN0n3OCqwAAFxi4Pmg"
+    />
+    <title>Projekt - BundestagLive</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icon.jpeg"
+      style="border-radius: 100px"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation für Desktop -->
+    <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='../index.html#projects'">Wangu Pullwitt</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#gallerie">Gallerie</a></li>
+          <li><a href="#infos">Infos</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <!-- <a href="">DE </a><a href=""> EN</a> -->
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation für Mobile -->
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="location.href='../index.html#projects'">Wangu Pullwitt</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a onclick="toggleMenu()" href="#gallerie">Gallerie</a></li>
+          <li><a onclick="toggleMenu()" href="#infos">Infos</a></li>
+          <li><a onclick="toggleMenu()" href="#contact">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Mein Profil -->
+    <section id="gallerie">
+      <!-- <video class="header_vid" src="assets/bundestag-live/bl-video.mp4" autoplay loop></video> -->
+      <img
+        class="header_img"
+        src="https://i.ibb.co/zWK16RVj/bl1.webp"
+        alt="Header Img 1"
+        loading="lazy"
+      />
+    </section>
+    <!-- Infos über App -->
+    <section id="infos">
+      <div class="infos-wrapper">
+        <div class="single-info right">
+          <img src="https://i.ibb.co/n835Kr86/bl2.webp" alt="Single Info Img 1" loading="lazy"/>
+          <p class="section__text__p1">
+            Auf dem Homebildschirm der App <i>BundestagLive</i> erwartet den Benutzer erst einmal
+            einen Überblick über die bevorstehenden Wahlen aus den Bundesländern, 
+            dem Bund oder auch der Europäischen Union. Die zweite Kategorie zeigt 
+            die aktuellsten zehn Abstimmungen aus dem Deutschen Bundestag. 
+            Durch Namen und Farbe der Darstellung kann man sofort sehen, 
+            ob der Abstimmung zugestimmt oder ob sie abgelehnt wurde.
+            <br>
+            <br>
+            Der hier nur durch die Überschrift angedeutete dritte Abschnitt
+            befasst sich mit den neusten Nachrichten in Deutschland, 
+            welche mittels der Tagesschau-API abgerufen werden.
+          </p>
+        </div>
+
+        <div class="single-info left">
+          <p class="section__text__p1 desc">
+            Drückt man auf dem Startbildschirm auf eine der bevorstehenden Wahlen, 
+            so gelangt man auf den dargestellten Bildschirm. 
+            Dieser liefert Auskunft über Daten der Wahl, 
+            darunter Standort der Wahl, Datum. 
+            <br>
+            Unten sieht der Nutzer neben dem Umfragezeitraum und der 
+            Zahl an der Umfrage teilgenommenen Personen das ausgewählte 
+            Umfrageinstitut. Durch Tippen auf das farblich hervorgehobene 
+            Institut kann man aus zahlreichen verfügbaren Instituten 
+            wechseln, um eventuelle Unterschiede der Umfrageergebnisse 
+            berücksichtigen zu können.
+            <br>
+            Das Diagramm bildet die Auswertungen der Umfrage des ausgewählten Instituts, mittels 
+            Balkendiagramm ab. Somit können einfach die Prozentwerte abgelesen werden.
+          </p>
+          <img src="https://i.ibb.co/C5PWKZWV/bl3.webp" alt="Single Info Img 2" loading="lazy"/>
+          <p class="section__text__p1 mobile">
+            Drückt man auf dem Startbildschirm auf eine der bevorstehenden Wahlen, 
+            so gelangt man auf den dargestellten Bildschirm. 
+            Dieser liefert Auskunft über Daten der Wahl, 
+            darunter Standort der Wahl, Datum. 
+            <br>
+            Unten sieht der Nutzer neben dem Umfragezeitraum und der 
+            Zahl an der Umfrage teilgenommenen Personen das ausgewählte 
+            Umfrageinstitut. Durch Tippen auf das farblich hervorgehobene 
+            Institut kann man aus zahlreichen verfügbaren Instituten 
+            wechseln, um eventuelle Unterschiede der Umfrageergebnisse 
+            berücksichtigen zu können.
+            <br>
+            Das Diagramm bildet die Auswertungen der Umfrage des ausgewählten Instituts, mittels 
+            Balkendiagramm ab. Somit können einfach die Prozentwerte abgelesen werden.
+          </p>
+        </div>
+
+        <div class="single-info right">
+          <img src="https://i.ibb.co/jZvSKtkQ/bl4.webp" alt="Single Info Img 3" loading="lazy"/>
+          <p class="section__text__p1">
+            Abstimmungen sind das Mittel für demokratische Entscheidungen 
+            und somit auch unabdingbar für eine Demokratie. 
+            Da nur die wenigsten Abstimmungen die Öffentlichkeit 
+            erreichen, kann man über <i>BundestagLive</i> alle Abstimmungen 
+            des Parlaments einsehen. Aber nicht nur wird der Name und 
+            das Ergebnis genannt, es wird auch ein Text dargestellt, 
+            welcher den Inhalt der Abstimmung näher erläutert.
+          </p>
+        </div>
+
+        <div class="single-info left">
+          <p class="section__text__p1 desc">
+            In der Übersicht „Mehr“ können weitere interessante 
+            Daten aus der Politik ausgelesen werden. 
+            Beispielsweise können führende Politiker schnell 
+            aufgerufen werden, die Ergebnisse vergangener Wahlen 
+            evaluiert, oder sogar die Wahlprogramme aller zur Wahl 
+            stehenden Parteien der letzten und zukünftigen Wahlen 
+            (soweit verfügbar) studiert werden.
+          </p>
+          <img src="https://i.ibb.co/nMYN6xM9/bl5.webp" alt="Single Info Img 4" loading="lazy"/>
+          <p class="section__text__p1 mobile">
+            In der Übersicht „Mehr“ können weitere interessante 
+            Daten aus der Politik ausgelesen werden. 
+            Beispielsweise können führende Politiker schnell 
+            aufgerufen werden, die Ergebnisse vergangener Wahlen 
+            evaluiert, oder sogar die Wahlprogramme aller zur Wahl 
+            stehenden Parteien der letzten und zukünftigen Wahlen 
+            (soweit verfügbar) studiert werden.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Kontaktangaben -->
+    <section id="contact">
+      <h1 class="title">Schreiben Sie mir</h1>
+      <div class="contact-upper-container">
+        <div class="contact-info-upper-container">
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="mailto:info@wangupullwitt.de">Mail</a>
+              </p>
+            </div>
+            <img
+              src="../assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+            <img
+              src="../assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="circle-link-container">
+            <div class="contact-info-container circle-link">
+              <p>
+                <a
+                  href="https://www.instagram.com/wangu.pullwitt"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </p>
+            </div>
+            <img
+              src="../assets/circle.png"
+              alt="Circle"
+              class="circle-image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fußzeile -->
+    <footer>
+      <nav id="nav-links__desctop">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#infos">Infos</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="nav-links__mobile">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#infos">Infos</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright 2024 - 2025 &#169;. All Rights Reserved. <br />
+      </p>
+    </footer>
+  </body>
+</html>

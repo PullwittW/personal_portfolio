@@ -1,0 +1,129 @@
+@media screen and (max-width: 1400px) {
+  /* General */
+  section {
+    margin: 0 2rem;
+  }
+  /* GALLERIE */
+  #gallerie {
+    padding-top: 0;
+  }
+  .single-info {
+    padding: 4vh 0;
+  }
+  /* INFOS */
+}
+
+@media screen and (max-width: 1200px) {
+  /* INFOS */
+  .single-info {
+    display: block;
+  }
+  .section-container {
+    display: block;
+  }
+  .left,
+  .right {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Gallery */
+  .gallery {
+    --s: 290px; /* control the size */
+    --g: 5px; /* control the gap */
+    --f: 1; /* control the scale factor */
+    display: grid;
+    gap: var(--g);
+    width: calc(3 * var(--s));
+    grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* HEADER */
+  header {
+    height: 75vh;
+  }
+
+  /* Gallery */
+  .photos-detail-overlay {
+    display: none;
+  }
+
+  .gallery {
+    --s: 220px; /* control the size */
+    --g: 5px; /* control the gap */
+    --f: 1; /* control the scale factor */
+    display: grid;
+    gap: var(--g);
+    width: calc(3 * var(--s));
+    grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* General */
+
+  /* HEADER */
+  header {
+    height: 85vh;
+  }
+  header img {
+    width: 90%;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .navbar h3 {
+    position: sticky;
+    font-size: 0.8rem;
+  }
+
+  /* Gallery */
+  .gallery-padding {
+    height: 10px;
+  }
+
+  .gallery {
+    --s: 115px; /* control the size */
+    --g: 10px; /* control the gap */
+    --f: 1; /* control the scale factor */
+    display: grid;
+    gap: var(--g);
+    width: calc(3 * var(--s));
+    grid-auto-rows: calc(var(--s)); /* Jede Zeile hat die gleiche Höhe */
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 20px;
+  }
+
+  /* KONTAKT */
+  .contact-info-upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .circle-link-container {
+    display: flex;
+    position: none;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
