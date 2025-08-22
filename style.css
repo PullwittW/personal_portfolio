@@ -255,23 +255,19 @@ section {
 @keyframes words {
   0%,
   20% {
-    content: "Hobby Programmer";
+    content: "Jura Student aus Bayreuth";
   }
   21%,
   40% {
-    content: "Traveller Around the World";
+    content: "Hobby Programmierer";
   }
   41%,
   60% {
-    content: "Hobby Programmer";
+    content: "Jura Student aus Bayreuth";
   }
   61%,
   80% {
-    content: "Traveller Around the World";
-  }
-  81%,
-  100% {
-    content: "Hobby Programmer";
+    content: "Um die Welt reisender";
   }
 }
 
