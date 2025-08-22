@@ -254,19 +254,19 @@ section {
 
 @keyframes words {
   0%,
-  20% {
+  25% {
     content: "Jura Student aus Bayreuth";
   }
-  21%,
-  40% {
+  26%,
+  50% {
     content: "Hobby Programmierer";
   }
-  41%,
-  60% {
+  51%,
+  75% {
     content: "Jura Student aus Bayreuth";
   }
-  61%,
-  80% {
+  76%,
+  100% {
     content: "Um die Welt reisender";
   }
 }
